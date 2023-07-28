@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace Interfaz_UsuarioFinal
 {
-    public partial class Form1 : Form
+    public partial class Registro : Form
     {
-        public Form1()
+        public Registro()
         {
             InitializeComponent();
+        }
+
+        private void BtnExit_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            InicioSesion inicio = new InicioSesion();
+            inicio.Show();
         }
     }
 }
