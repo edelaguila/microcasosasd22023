@@ -136,7 +136,7 @@ public class Login extends javax.swing.JFrame {
         // TODO add your handling code here:
 
         if (txtUsuario.getText().trim().isEmpty() || txtContraseña.getText().trim().isEmpty()) {
-            JOptionPane.showMessageDialog(this, "NO PUEDEN HABER CAMPOS VACIOS", "ADVERTENCIA", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "No pueden haber campos vacios", "ADVERTENCIA", JOptionPane.ERROR_MESSAGE);
         } else {
             try {
                 Usuario usuarioAConsultar = new Usuario();
@@ -146,19 +146,19 @@ public class Login extends javax.swing.JFrame {
                 usuarioAConsultar = usuarioDAO.query(usuarioAConsultar);
 
                 if (txtContraseña.getText().equals(usuarioAConsultar.getPassword()) && txtUsuario.getText().equals(usuarioAConsultar.getUsername())) {
-                    JOptionPane.showMessageDialog(null, "Bienvenido al sistema\n", "Bienvenido", JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "Bienvenido al sistema\n", "HOLA", JOptionPane.INFORMATION_MESSAGE);
 
                     lobby menu = new lobby();
                     menu.setVisible(true);
                     this.dispose();
 
                 } else {
-                    JOptionPane.showMessageDialog(this, "ERROR AL ENCONTRAR USUARIO o CONTRASEÑA", "ERROR", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(this, "Error al encontrar usuario o contraseña", "ERROR", JOptionPane.ERROR_MESSAGE);
                     txtContraseña.setText("");
                     txtUsuario.setText("");
                 }
             } catch (HeadlessException e) {
-                JOptionPane.showMessageDialog(this, "ERROR AL ENCONTRAR USUARIO o CONTRASEÑA", "ERROR", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this, "Error al encontrar usuario o contraseña", "ERROR", JOptionPane.ERROR_MESSAGE);
                 txtContraseña.setText("");
                 txtUsuario.setText("");
             }
