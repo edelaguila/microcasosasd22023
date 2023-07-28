@@ -46,5 +46,10 @@ namespace Software_de_taquilla.Views.AdminViews
             panel_picture.BackgroundImage = Image.FromFile(myfile);
             panel_picture.BackgroundImageLayout = ImageLayout.Zoom;
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -9,6 +9,6 @@ namespace Software_de_taquilla.Models.Dao
 {
     public class DBContext
     {
-        protected MySqlConnection connection = new MySqlConnection("server=localhost;database=test;uid=root;pwd=;");
+        protected MySqlConnection connection = new MySqlConnection("server=testglobal.mysql.database.azure.com;database=test;uid=Adminandrea;pwd=analisis2!;");
     }
 }

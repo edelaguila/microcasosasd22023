@@ -29,234 +29,245 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashboardAdmin));
-            PanelMenu = new Panel();
-            btn_peliculas = new Button();
-            pic_exit = new PictureBox();
-            btn_usuarios = new Button();
-            btnMenuAyuda = new Button();
-            btn_reportes = new Button();
-            btn_inicio = new Button();
-            PanelDatos = new Panel();
-            lblEstado = new Label();
-            lblPerfil = new Label();
-            PctPerfil = new PictureBox();
-            label1 = new Label();
-            panel_container = new Panel();
-            PanelMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pic_exit).BeginInit();
-            PanelDatos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)PctPerfil).BeginInit();
-            SuspendLayout();
+            this.PanelMenu = new System.Windows.Forms.Panel();
+            this.btn_peliculas = new System.Windows.Forms.Button();
+            this.pic_exit = new System.Windows.Forms.PictureBox();
+            this.btn_usuarios = new System.Windows.Forms.Button();
+            this.btnMenuAyuda = new System.Windows.Forms.Button();
+            this.btn_reportes = new System.Windows.Forms.Button();
+            this.btn_inicio = new System.Windows.Forms.Button();
+            this.PanelDatos = new System.Windows.Forms.Panel();
+            this.lblEstado = new System.Windows.Forms.Label();
+            this.lblPerfil = new System.Windows.Forms.Label();
+            this.Pic_Perfil = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel_container = new System.Windows.Forms.Panel();
+            this.PanelMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_exit)).BeginInit();
+            this.PanelDatos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_Perfil)).BeginInit();
+            this.SuspendLayout();
             // 
             // PanelMenu
             // 
-            PanelMenu.AutoScroll = true;
-            PanelMenu.BackColor = Color.FromArgb(12, 62, 85);
-            PanelMenu.Controls.Add(btn_peliculas);
-            PanelMenu.Controls.Add(pic_exit);
-            PanelMenu.Controls.Add(btn_usuarios);
-            PanelMenu.Controls.Add(btnMenuAyuda);
-            PanelMenu.Controls.Add(btn_reportes);
-            PanelMenu.Controls.Add(btn_inicio);
-            PanelMenu.Controls.Add(PanelDatos);
-            PanelMenu.Dock = DockStyle.Left;
-            PanelMenu.Location = new Point(0, 0);
-            PanelMenu.Name = "PanelMenu";
-            PanelMenu.Size = new Size(239, 498);
-            PanelMenu.TabIndex = 1;
+            this.PanelMenu.AutoScroll = true;
+            this.PanelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(62)))), ((int)(((byte)(85)))));
+            this.PanelMenu.Controls.Add(this.btn_peliculas);
+            this.PanelMenu.Controls.Add(this.pic_exit);
+            this.PanelMenu.Controls.Add(this.btn_usuarios);
+            this.PanelMenu.Controls.Add(this.btnMenuAyuda);
+            this.PanelMenu.Controls.Add(this.btn_reportes);
+            this.PanelMenu.Controls.Add(this.btn_inicio);
+            this.PanelMenu.Controls.Add(this.PanelDatos);
+            this.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.PanelMenu.Location = new System.Drawing.Point(0, 0);
+            this.PanelMenu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.PanelMenu.Name = "PanelMenu";
+            this.PanelMenu.Size = new System.Drawing.Size(273, 664);
+            this.PanelMenu.TabIndex = 1;
             // 
             // btn_peliculas
             // 
-            btn_peliculas.Dock = DockStyle.Top;
-            btn_peliculas.FlatAppearance.BorderSize = 0;
-            btn_peliculas.FlatAppearance.MouseDownBackColor = Color.FromArgb(36, 171, 218);
-            btn_peliculas.FlatAppearance.MouseOverBackColor = Color.FromArgb(36, 171, 218);
-            btn_peliculas.FlatStyle = FlatStyle.Flat;
-            btn_peliculas.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btn_peliculas.ForeColor = SystemColors.Control;
-            btn_peliculas.Image = Properties.Resources.movies;
-            btn_peliculas.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_peliculas.Location = new Point(0, 319);
-            btn_peliculas.Name = "btn_peliculas";
-            btn_peliculas.Padding = new Padding(60, 0, 0, 0);
-            btn_peliculas.Size = new Size(239, 45);
-            btn_peliculas.TabIndex = 9;
-            btn_peliculas.Text = "    Peliculas";
-            btn_peliculas.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btn_peliculas.UseVisualStyleBackColor = true;
-            btn_peliculas.Click += btn_peliculas_Click;
+            this.btn_peliculas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_peliculas.FlatAppearance.BorderSize = 0;
+            this.btn_peliculas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(171)))), ((int)(((byte)(218)))));
+            this.btn_peliculas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(171)))), ((int)(((byte)(218)))));
+            this.btn_peliculas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_peliculas.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_peliculas.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_peliculas.Image = global::Software_de_taquilla.Properties.Resources.movies;
+            this.btn_peliculas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_peliculas.Location = new System.Drawing.Point(0, 425);
+            this.btn_peliculas.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_peliculas.Name = "btn_peliculas";
+            this.btn_peliculas.Padding = new System.Windows.Forms.Padding(69, 0, 0, 0);
+            this.btn_peliculas.Size = new System.Drawing.Size(273, 60);
+            this.btn_peliculas.TabIndex = 9;
+            this.btn_peliculas.Text = "    Peliculas";
+            this.btn_peliculas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_peliculas.UseVisualStyleBackColor = true;
+            this.btn_peliculas.Click += new System.EventHandler(this.btn_peliculas_Click);
             // 
             // pic_exit
             // 
-            pic_exit.Image = Properties.Resources.exit;
-            pic_exit.Location = new Point(208, 465);
-            pic_exit.Name = "pic_exit";
-            pic_exit.Size = new Size(25, 21);
-            pic_exit.SizeMode = PictureBoxSizeMode.Zoom;
-            pic_exit.TabIndex = 8;
-            pic_exit.TabStop = false;
-            pic_exit.Click += pic_exit_Click;
+            this.pic_exit.Image = global::Software_de_taquilla.Properties.Resources.exit;
+            this.pic_exit.Location = new System.Drawing.Point(238, 620);
+            this.pic_exit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pic_exit.Name = "pic_exit";
+            this.pic_exit.Size = new System.Drawing.Size(29, 28);
+            this.pic_exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_exit.TabIndex = 8;
+            this.pic_exit.TabStop = false;
             // 
             // btn_usuarios
             // 
-            btn_usuarios.Dock = DockStyle.Top;
-            btn_usuarios.FlatAppearance.BorderSize = 0;
-            btn_usuarios.FlatAppearance.MouseDownBackColor = Color.FromArgb(36, 171, 218);
-            btn_usuarios.FlatAppearance.MouseOverBackColor = Color.FromArgb(36, 171, 218);
-            btn_usuarios.FlatStyle = FlatStyle.Flat;
-            btn_usuarios.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btn_usuarios.ForeColor = SystemColors.Control;
-            btn_usuarios.Image = Properties.Resources.users2;
-            btn_usuarios.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_usuarios.Location = new Point(0, 274);
-            btn_usuarios.Name = "btn_usuarios";
-            btn_usuarios.Padding = new Padding(60, 0, 0, 0);
-            btn_usuarios.Size = new Size(239, 45);
-            btn_usuarios.TabIndex = 7;
-            btn_usuarios.Text = "   Usuarios";
-            btn_usuarios.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btn_usuarios.UseVisualStyleBackColor = true;
-            btn_usuarios.Click += btn_usuarios_Click;
+            this.btn_usuarios.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_usuarios.FlatAppearance.BorderSize = 0;
+            this.btn_usuarios.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(171)))), ((int)(((byte)(218)))));
+            this.btn_usuarios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(171)))), ((int)(((byte)(218)))));
+            this.btn_usuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_usuarios.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_usuarios.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_usuarios.Image = global::Software_de_taquilla.Properties.Resources.users2;
+            this.btn_usuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_usuarios.Location = new System.Drawing.Point(0, 365);
+            this.btn_usuarios.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_usuarios.Name = "btn_usuarios";
+            this.btn_usuarios.Padding = new System.Windows.Forms.Padding(69, 0, 0, 0);
+            this.btn_usuarios.Size = new System.Drawing.Size(273, 60);
+            this.btn_usuarios.TabIndex = 7;
+            this.btn_usuarios.Text = "   Usuarios";
+            this.btn_usuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_usuarios.UseVisualStyleBackColor = true;
+            this.btn_usuarios.Click += new System.EventHandler(this.btn_usuarios_Click);
             // 
             // btnMenuAyuda
             // 
-            btnMenuAyuda.Dock = DockStyle.Top;
-            btnMenuAyuda.FlatAppearance.BorderSize = 0;
-            btnMenuAyuda.FlatAppearance.MouseDownBackColor = Color.FromArgb(36, 171, 218);
-            btnMenuAyuda.FlatAppearance.MouseOverBackColor = Color.FromArgb(36, 171, 218);
-            btnMenuAyuda.FlatStyle = FlatStyle.Flat;
-            btnMenuAyuda.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnMenuAyuda.ForeColor = SystemColors.Control;
-            btnMenuAyuda.Image = (Image)resources.GetObject("btnMenuAyuda.Image");
-            btnMenuAyuda.ImageAlign = ContentAlignment.MiddleLeft;
-            btnMenuAyuda.Location = new Point(0, 229);
-            btnMenuAyuda.Name = "btnMenuAyuda";
-            btnMenuAyuda.Padding = new Padding(60, 0, 0, 0);
-            btnMenuAyuda.Size = new Size(239, 45);
-            btnMenuAyuda.TabIndex = 5;
-            btnMenuAyuda.Text = "Menú de ayuda";
-            btnMenuAyuda.UseVisualStyleBackColor = true;
+            this.btnMenuAyuda.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMenuAyuda.FlatAppearance.BorderSize = 0;
+            this.btnMenuAyuda.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(171)))), ((int)(((byte)(218)))));
+            this.btnMenuAyuda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(171)))), ((int)(((byte)(218)))));
+            this.btnMenuAyuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenuAyuda.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnMenuAyuda.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnMenuAyuda.Image = ((System.Drawing.Image)(resources.GetObject("btnMenuAyuda.Image")));
+            this.btnMenuAyuda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMenuAyuda.Location = new System.Drawing.Point(0, 305);
+            this.btnMenuAyuda.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnMenuAyuda.Name = "btnMenuAyuda";
+            this.btnMenuAyuda.Padding = new System.Windows.Forms.Padding(69, 0, 0, 0);
+            this.btnMenuAyuda.Size = new System.Drawing.Size(273, 60);
+            this.btnMenuAyuda.TabIndex = 5;
+            this.btnMenuAyuda.Text = "Menú de ayuda";
+            this.btnMenuAyuda.UseVisualStyleBackColor = true;
+            this.btnMenuAyuda.Click += new System.EventHandler(this.btnMenuAyuda_Click);
             // 
             // btn_reportes
             // 
-            btn_reportes.Dock = DockStyle.Top;
-            btn_reportes.FlatAppearance.BorderSize = 0;
-            btn_reportes.FlatAppearance.MouseDownBackColor = Color.FromArgb(36, 171, 218);
-            btn_reportes.FlatAppearance.MouseOverBackColor = Color.FromArgb(36, 171, 218);
-            btn_reportes.FlatStyle = FlatStyle.Flat;
-            btn_reportes.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btn_reportes.ForeColor = SystemColors.Control;
-            btn_reportes.Image = Properties.Resources.report;
-            btn_reportes.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_reportes.Location = new Point(0, 184);
-            btn_reportes.Name = "btn_reportes";
-            btn_reportes.Padding = new Padding(60, 0, 0, 0);
-            btn_reportes.Size = new Size(239, 45);
-            btn_reportes.TabIndex = 3;
-            btn_reportes.Text = "   Reportes";
-            btn_reportes.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btn_reportes.UseVisualStyleBackColor = true;
+            this.btn_reportes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_reportes.FlatAppearance.BorderSize = 0;
+            this.btn_reportes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(171)))), ((int)(((byte)(218)))));
+            this.btn_reportes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(171)))), ((int)(((byte)(218)))));
+            this.btn_reportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_reportes.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_reportes.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_reportes.Image = global::Software_de_taquilla.Properties.Resources.report;
+            this.btn_reportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_reportes.Location = new System.Drawing.Point(0, 245);
+            this.btn_reportes.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_reportes.Name = "btn_reportes";
+            this.btn_reportes.Padding = new System.Windows.Forms.Padding(69, 0, 0, 0);
+            this.btn_reportes.Size = new System.Drawing.Size(273, 60);
+            this.btn_reportes.TabIndex = 3;
+            this.btn_reportes.Text = "   Reportes";
+            this.btn_reportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_reportes.UseVisualStyleBackColor = true;
+            this.btn_reportes.Click += new System.EventHandler(this.btn_reportes_Click);
             // 
             // btn_inicio
             // 
-            btn_inicio.Dock = DockStyle.Top;
-            btn_inicio.FlatAppearance.BorderSize = 0;
-            btn_inicio.FlatAppearance.MouseDownBackColor = Color.FromArgb(36, 171, 218);
-            btn_inicio.FlatAppearance.MouseOverBackColor = Color.FromArgb(36, 171, 218);
-            btn_inicio.FlatStyle = FlatStyle.Flat;
-            btn_inicio.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btn_inicio.ForeColor = SystemColors.Control;
-            btn_inicio.Image = (Image)resources.GetObject("btn_inicio.Image");
-            btn_inicio.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_inicio.Location = new Point(0, 139);
-            btn_inicio.Name = "btn_inicio";
-            btn_inicio.Padding = new Padding(60, 0, 0, 0);
-            btn_inicio.Size = new Size(239, 45);
-            btn_inicio.TabIndex = 2;
-            btn_inicio.Text = "    Inicio";
-            btn_inicio.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btn_inicio.UseVisualStyleBackColor = true;
+            this.btn_inicio.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_inicio.FlatAppearance.BorderSize = 0;
+            this.btn_inicio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(171)))), ((int)(((byte)(218)))));
+            this.btn_inicio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(171)))), ((int)(((byte)(218)))));
+            this.btn_inicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_inicio.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_inicio.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_inicio.Image = ((System.Drawing.Image)(resources.GetObject("btn_inicio.Image")));
+            this.btn_inicio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_inicio.Location = new System.Drawing.Point(0, 185);
+            this.btn_inicio.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_inicio.Name = "btn_inicio";
+            this.btn_inicio.Padding = new System.Windows.Forms.Padding(69, 0, 0, 0);
+            this.btn_inicio.Size = new System.Drawing.Size(273, 60);
+            this.btn_inicio.TabIndex = 2;
+            this.btn_inicio.Text = "    Inicio";
+            this.btn_inicio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_inicio.UseVisualStyleBackColor = true;
             // 
             // PanelDatos
             // 
-            PanelDatos.Controls.Add(lblEstado);
-            PanelDatos.Controls.Add(lblPerfil);
-            PanelDatos.Controls.Add(PctPerfil);
-            PanelDatos.Controls.Add(label1);
-            PanelDatos.Dock = DockStyle.Top;
-            PanelDatos.Location = new Point(0, 0);
-            PanelDatos.Name = "PanelDatos";
-            PanelDatos.Size = new Size(239, 139);
-            PanelDatos.TabIndex = 1;
+            this.PanelDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(62)))), ((int)(((byte)(85)))));
+            this.PanelDatos.Controls.Add(this.lblEstado);
+            this.PanelDatos.Controls.Add(this.lblPerfil);
+            this.PanelDatos.Controls.Add(this.Pic_Perfil);
+            this.PanelDatos.Controls.Add(this.label1);
+            this.PanelDatos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelDatos.Location = new System.Drawing.Point(0, 0);
+            this.PanelDatos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.PanelDatos.Name = "PanelDatos";
+            this.PanelDatos.Size = new System.Drawing.Size(273, 185);
+            this.PanelDatos.TabIndex = 1;
             // 
             // lblEstado
             // 
-            lblEstado.AutoSize = true;
-            lblEstado.Font = new Font("Times New Roman", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            lblEstado.ForeColor = Color.Turquoise;
-            lblEstado.Location = new Point(124, 99);
-            lblEstado.Name = "lblEstado";
-            lblEstado.Size = new Size(44, 15);
-            lblEstado.TabIndex = 3;
-            lblEstado.Text = "Estado";
+            this.lblEstado.AutoSize = true;
+            this.lblEstado.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblEstado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(105)))), ((int)(((byte)(130)))));
+            this.lblEstado.Location = new System.Drawing.Point(142, 132);
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.Size = new System.Drawing.Size(55, 19);
+            this.lblEstado.TabIndex = 3;
+            this.lblEstado.Text = "Estado";
             // 
             // lblPerfil
             // 
-            lblPerfil.AutoSize = true;
-            lblPerfil.Font = new Font("Times New Roman", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            lblPerfil.ForeColor = SystemColors.Control;
-            lblPerfil.Location = new Point(124, 74);
-            lblPerfil.Name = "lblPerfil";
-            lblPerfil.Size = new Size(84, 15);
-            lblPerfil.TabIndex = 2;
-            lblPerfil.Text = "Administrador";
+            this.lblPerfil.AutoSize = true;
+            this.lblPerfil.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPerfil.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblPerfil.Location = new System.Drawing.Point(142, 99);
+            this.lblPerfil.Name = "lblPerfil";
+            this.lblPerfil.Size = new System.Drawing.Size(107, 19);
+            this.lblPerfil.TabIndex = 2;
+            this.lblPerfil.Text = "Administrador";
             // 
-            // PctPerfil
+            // Pic_Perfil
             // 
-            PctPerfil.Location = new Point(49, 65);
-            PctPerfil.Name = "PctPerfil";
-            PctPerfil.Size = new Size(66, 57);
-            PctPerfil.TabIndex = 1;
-            PctPerfil.TabStop = false;
+            this.Pic_Perfil.Location = new System.Drawing.Point(56, 87);
+            this.Pic_Perfil.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Pic_Perfil.Name = "Pic_Perfil";
+            this.Pic_Perfil.Size = new System.Drawing.Size(75, 76);
+            this.Pic_Perfil.TabIndex = 1;
+            this.Pic_Perfil.TabStop = false;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Bookman Old Style", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(35, 25);
-            label1.Name = "label1";
-            label1.Size = new Size(152, 19);
-            label1.TabIndex = 0;
-            label1.Text = "MACRO CINEMA";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(40, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(181, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "MACRO CINEMA";
             // 
             // panel_container
             // 
-            panel_container.Dock = DockStyle.Fill;
-            panel_container.Location = new Point(239, 0);
-            panel_container.Name = "panel_container";
-            panel_container.Size = new Size(1020, 498);
-            panel_container.TabIndex = 2;
+            this.panel_container.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_container.Location = new System.Drawing.Point(273, 0);
+            this.panel_container.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel_container.Name = "panel_container";
+            this.panel_container.Size = new System.Drawing.Size(1166, 664);
+            this.panel_container.TabIndex = 2;
             // 
             // DashboardAdmin
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
-            ClientSize = new Size(1259, 498);
-            Controls.Add(panel_container);
-            Controls.Add(PanelMenu);
-            Margin = new Padding(3, 2, 3, 2);
-            MinimumSize = new Size(833, 460);
-            Name = "DashboardAdmin";
-            Text = "DashboardAdmin";
-            Load += DashboardAdmin_Load;
-            PanelMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pic_exit).EndInit();
-            PanelDatos.ResumeLayout(false);
-            PanelDatos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)PctPerfil).EndInit();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1439, 664);
+            this.Controls.Add(this.panel_container);
+            this.Controls.Add(this.PanelMenu);
+            this.MinimumSize = new System.Drawing.Size(949, 598);
+            this.Name = "DashboardAdmin";
+            this.Text = "DashboardAdmin";
+            this.PanelMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pic_exit)).EndInit();
+            this.PanelDatos.ResumeLayout(false);
+            this.PanelDatos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_Perfil)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
@@ -266,7 +277,7 @@
         private Panel PanelDatos;
         private Label lblEstado;
         private Label lblPerfil;
-        private PictureBox PctPerfil;
+        private PictureBox Pic_Perfil;
         private Label label1;
         private Button btn_usuarios;
         private Button btnMenuAyuda;

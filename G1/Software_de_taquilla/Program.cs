@@ -1,3 +1,4 @@
+using Software_de_taquilla.Views.UserViews;
 using Software_de_taquilla.Views;
 
 namespace Software_de_taquilla

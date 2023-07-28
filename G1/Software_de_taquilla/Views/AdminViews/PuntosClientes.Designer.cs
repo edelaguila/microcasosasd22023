@@ -30,13 +30,13 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txt_buscador = new System.Windows.Forms.TextBox();
             this.dgv_puntosclientes = new System.Windows.Forms.DataGridView();
             this.Foto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Correo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Puntos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txt_buscador = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.btn_IngresoS = new System.Windows.Forms.Button();
             this.btn_IngresoM = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -63,24 +63,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(605, 456);
             this.panel1.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(20, 15);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(169, 22);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Puntos de clientes";
-            // 
-            // txt_buscador
-            // 
-            this.txt_buscador.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_buscador.Location = new System.Drawing.Point(26, 48);
-            this.txt_buscador.Name = "txt_buscador";
-            this.txt_buscador.Size = new System.Drawing.Size(561, 26);
-            this.txt_buscador.TabIndex = 1;
             // 
             // dgv_puntosclientes
             // 
@@ -128,6 +110,24 @@
             this.Puntos.Name = "Puntos";
             this.Puntos.Width = 125;
             // 
+            // txt_buscador
+            // 
+            this.txt_buscador.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_buscador.Location = new System.Drawing.Point(26, 48);
+            this.txt_buscador.Name = "txt_buscador";
+            this.txt_buscador.Size = new System.Drawing.Size(561, 26);
+            this.txt_buscador.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(20, 15);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(169, 22);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Puntos de clientes";
+            // 
             // btn_IngresoS
             // 
             this.btn_IngresoS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(209)))), ((int)(((byte)(212)))));
@@ -160,6 +160,7 @@
             this.Controls.Add(this.btn_IngresoS);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PuntosClientes";
             this.Text = "PuntosClientes";
             this.panel1.ResumeLayout(false);

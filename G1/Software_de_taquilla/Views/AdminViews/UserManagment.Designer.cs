@@ -28,183 +28,173 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txt_name = new System.Windows.Forms.TextBox();
-            this.txt_contrasenia = new System.Windows.Forms.TextBox();
-            this.data_grid = new System.Windows.Forms.DataGridView();
-            this.btn_save = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.role_list = new System.Windows.Forms.ComboBox();
-            this.btn_delete = new System.Windows.Forms.Button();
-            this.btn_update = new System.Windows.Forms.Button();
-            this.passImage = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.data_grid)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.passImage)).BeginInit();
-            this.SuspendLayout();
+            txt_name = new TextBox();
+            txt_contrasenia = new TextBox();
+            data_grid = new DataGridView();
+            btn_save = new Button();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            role_list = new ComboBox();
+            btn_delete = new Button();
+            btn_update = new Button();
+            passImage = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)data_grid).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)passImage).BeginInit();
+            SuspendLayout();
             // 
             // txt_name
             // 
-            this.txt_name.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txt_name.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_name.Location = new System.Drawing.Point(50, 103);
-            this.txt_name.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_name.Multiline = true;
-            this.txt_name.Name = "txt_name";
-            this.txt_name.Size = new System.Drawing.Size(203, 40);
-            this.txt_name.TabIndex = 0;
+            txt_name.BackColor = Color.WhiteSmoke;
+            txt_name.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_name.Location = new Point(44, 77);
+            txt_name.Name = "txt_name";
+            txt_name.Size = new Size(178, 25);
+            txt_name.TabIndex = 0;
             // 
             // txt_contrasenia
             // 
-            this.txt_contrasenia.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txt_contrasenia.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_contrasenia.Location = new System.Drawing.Point(50, 187);
-            this.txt_contrasenia.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_contrasenia.Multiline = true;
-            this.txt_contrasenia.Name = "txt_contrasenia";
-            this.txt_contrasenia.PasswordChar = '*';
-            this.txt_contrasenia.Size = new System.Drawing.Size(203, 40);
-            this.txt_contrasenia.TabIndex = 1;
+            txt_contrasenia.BackColor = Color.WhiteSmoke;
+            txt_contrasenia.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_contrasenia.Location = new Point(44, 140);
+            txt_contrasenia.Name = "txt_contrasenia";
+            txt_contrasenia.PasswordChar = '*';
+            txt_contrasenia.Size = new Size(178, 24);
+            txt_contrasenia.TabIndex = 1;
             // 
             // data_grid
             // 
-            this.data_grid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.data_grid.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.data_grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.data_grid.Location = new System.Drawing.Point(333, 63);
-            this.data_grid.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.data_grid.Name = "data_grid";
-            this.data_grid.RowHeadersWidth = 51;
-            this.data_grid.RowTemplate.Height = 25;
-            this.data_grid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.data_grid.Size = new System.Drawing.Size(779, 395);
-            this.data_grid.TabIndex = 4;
+            data_grid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            data_grid.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            data_grid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            data_grid.Location = new Point(291, 47);
+            data_grid.Name = "data_grid";
+            data_grid.RowHeadersVisible = false;
+            data_grid.RowHeadersWidth = 51;
+            data_grid.RowTemplate.Height = 25;
+            data_grid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            data_grid.Size = new Size(682, 296);
+            data_grid.TabIndex = 4;
             // 
             // btn_save
             // 
-            this.btn_save.BackColor = System.Drawing.Color.SeaGreen;
-            this.btn_save.FlatAppearance.BorderSize = 0;
-            this.btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_save.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_save.ForeColor = System.Drawing.Color.White;
-            this.btn_save.Location = new System.Drawing.Point(50, 373);
-            this.btn_save.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(203, 31);
-            this.btn_save.TabIndex = 5;
-            this.btn_save.Text = "Guardar";
-            this.btn_save.UseVisualStyleBackColor = false;
+            btn_save.BackColor = Color.SeaGreen;
+            btn_save.FlatAppearance.BorderSize = 0;
+            btn_save.FlatStyle = FlatStyle.Flat;
+            btn_save.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_save.ForeColor = Color.White;
+            btn_save.Location = new Point(44, 280);
+            btn_save.Name = "btn_save";
+            btn_save.Size = new Size(178, 23);
+            btn_save.TabIndex = 5;
+            btn_save.Text = "Guardar";
+            btn_save.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(57, 72);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 20);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Usuario";
+            label1.AutoSize = true;
+            label1.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(50, 54);
+            label1.Name = "label1";
+            label1.Size = new Size(51, 17);
+            label1.TabIndex = 6;
+            label1.Text = "Usuario";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(57, 163);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 20);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Contraseña";
+            label2.AutoSize = true;
+            label2.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(50, 122);
+            label2.Name = "label2";
+            label2.Size = new Size(77, 17);
+            label2.TabIndex = 7;
+            label2.Text = "Contraseña";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(57, 245);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(31, 20);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Rol";
+            label3.AutoSize = true;
+            label3.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(50, 184);
+            label3.Name = "label3";
+            label3.Size = new Size(26, 17);
+            label3.TabIndex = 8;
+            label3.Text = "Rol";
             // 
             // role_list
             // 
-            this.role_list.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.role_list.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.role_list.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.role_list.FormattingEnabled = true;
-            this.role_list.Location = new System.Drawing.Point(50, 275);
-            this.role_list.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.role_list.Name = "role_list";
-            this.role_list.Size = new System.Drawing.Size(203, 28);
-            this.role_list.TabIndex = 9;
+            role_list.BackColor = Color.WhiteSmoke;
+            role_list.DropDownStyle = ComboBoxStyle.DropDownList;
+            role_list.FlatStyle = FlatStyle.Flat;
+            role_list.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            role_list.FormattingEnabled = true;
+            role_list.Location = new Point(44, 206);
+            role_list.Name = "role_list";
+            role_list.Size = new Size(178, 25);
+            role_list.TabIndex = 9;
             // 
             // btn_delete
             // 
-            this.btn_delete.BackColor = System.Drawing.Color.IndianRed;
-            this.btn_delete.FlatAppearance.BorderSize = 0;
-            this.btn_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_delete.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_delete.ForeColor = System.Drawing.Color.White;
-            this.btn_delete.Location = new System.Drawing.Point(992, 569);
-            this.btn_delete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(118, 31);
-            this.btn_delete.TabIndex = 10;
-            this.btn_delete.Text = "Eliminar";
-            this.btn_delete.UseVisualStyleBackColor = false;
+            btn_delete.BackColor = Color.IndianRed;
+            btn_delete.FlatAppearance.BorderSize = 0;
+            btn_delete.FlatStyle = FlatStyle.Flat;
+            btn_delete.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_delete.ForeColor = Color.White;
+            btn_delete.Location = new Point(868, 427);
+            btn_delete.Name = "btn_delete";
+            btn_delete.Size = new Size(103, 23);
+            btn_delete.TabIndex = 10;
+            btn_delete.Text = "Eliminar";
+            btn_delete.UseVisualStyleBackColor = false;
             // 
             // btn_update
             // 
-            this.btn_update.BackColor = System.Drawing.Color.Goldenrod;
-            this.btn_update.FlatAppearance.BorderSize = 0;
-            this.btn_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_update.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_update.ForeColor = System.Drawing.Color.White;
-            this.btn_update.Location = new System.Drawing.Point(811, 569);
-            this.btn_update.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_update.Name = "btn_update";
-            this.btn_update.Size = new System.Drawing.Size(118, 31);
-            this.btn_update.TabIndex = 11;
-            this.btn_update.Text = "Actualizar";
-            this.btn_update.UseVisualStyleBackColor = false;
+            btn_update.BackColor = Color.Goldenrod;
+            btn_update.FlatAppearance.BorderSize = 0;
+            btn_update.FlatStyle = FlatStyle.Flat;
+            btn_update.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_update.ForeColor = Color.White;
+            btn_update.Location = new Point(710, 427);
+            btn_update.Name = "btn_update";
+            btn_update.Size = new Size(103, 23);
+            btn_update.TabIndex = 11;
+            btn_update.Text = "Actualizar";
+            btn_update.UseVisualStyleBackColor = false;
             // 
             // passImage
             // 
-            this.passImage.Image = global::Software_de_taquilla.Properties.Resources.ojo1;
-            this.passImage.Location = new System.Drawing.Point(259, 191);
-            this.passImage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.passImage.Name = "passImage";
-            this.passImage.Size = new System.Drawing.Size(19, 36);
-            this.passImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.passImage.TabIndex = 12;
-            this.passImage.TabStop = false;
+            passImage.Image = Properties.Resources.ojo1;
+            passImage.Location = new Point(227, 143);
+            passImage.Name = "passImage";
+            passImage.Size = new Size(17, 27);
+            passImage.SizeMode = PictureBoxSizeMode.Zoom;
+            passImage.TabIndex = 12;
+            passImage.TabStop = false;
             // 
             // UserManagment
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1166, 664);
-            this.Controls.Add(this.passImage);
-            this.Controls.Add(this.btn_update);
-            this.Controls.Add(this.btn_delete);
-            this.Controls.Add(this.role_list);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.btn_save);
-            this.Controls.Add(this.data_grid);
-            this.Controls.Add(this.txt_contrasenia);
-            this.Controls.Add(this.txt_name);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "UserManagment";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "UserManagment";
-            ((System.ComponentModel.ISupportInitialize)(this.data_grid)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.passImage)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            ClientSize = new Size(1020, 498);
+            Controls.Add(passImage);
+            Controls.Add(btn_update);
+            Controls.Add(btn_delete);
+            Controls.Add(role_list);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(btn_save);
+            Controls.Add(data_grid);
+            Controls.Add(txt_contrasenia);
+            Controls.Add(txt_name);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "UserManagment";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "UserManagment";
+            ((System.ComponentModel.ISupportInitialize)data_grid).EndInit();
+            ((System.ComponentModel.ISupportInitialize)passImage).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

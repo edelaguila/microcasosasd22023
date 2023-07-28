@@ -16,11 +16,11 @@ namespace Software_de_taquilla.Models.Dao
             this.connection.Open();
             return this.connection != null;
         }
-        public bool userExist(string username, string password)
+        public bool userExist(string username, string password, int role)
         {
             bool exist = false;
             this.connection.Open();
-            string query = "select * from usuario where nombre='" + username + "' and contrasenia='" + password + "'";
+            string query = "select * from usuario where nombre='" + username + "' and contrasenia='" + password + "' and rol='" + role + "'";
             MySqlCommand cursor = new MySqlCommand(query, this.connection);
             MySqlDataReader reader = cursor.ExecuteReader();
             if (reader.HasRows) exist = true;

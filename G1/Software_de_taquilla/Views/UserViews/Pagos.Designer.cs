@@ -38,22 +38,20 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_fechav = new System.Windows.Forms.TextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.rb_pago = new System.Windows.Forms.RadioButton();
+            this.pic1 = new System.Windows.Forms.PictureBox();
+            this.pic2 = new System.Windows.Forms.PictureBox();
+            this.pic3 = new System.Windows.Forms.PictureBox();
+            this.pic6 = new System.Windows.Forms.PictureBox();
+            this.pic5 = new System.Windows.Forms.PictureBox();
+            this.pic4 = new System.Windows.Forms.PictureBox();
+            this.btn_cobro = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pic1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic4)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -62,7 +60,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bookman Old Style", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(62)))), ((int)(((byte)(85)))));
-            this.label1.Location = new System.Drawing.Point(38, 25);
+            this.label1.Location = new System.Drawing.Point(28, 69);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 40);
             this.label1.TabIndex = 0;
@@ -73,7 +71,7 @@
             this.txt_correo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_correo.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_correo.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txt_correo.Location = new System.Drawing.Point(48, 93);
+            this.txt_correo.Location = new System.Drawing.Point(38, 137);
             this.txt_correo.Name = "txt_correo";
             this.txt_correo.Size = new System.Drawing.Size(331, 30);
             this.txt_correo.TabIndex = 1;
@@ -86,7 +84,7 @@
             this.txt_telefono.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_telefono.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_telefono.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txt_telefono.Location = new System.Drawing.Point(437, 97);
+            this.txt_telefono.Location = new System.Drawing.Point(427, 141);
             this.txt_telefono.Name = "txt_telefono";
             this.txt_telefono.Size = new System.Drawing.Size(276, 30);
             this.txt_telefono.TabIndex = 2;
@@ -100,7 +98,7 @@
             this.txt_monto.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_monto.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_monto.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txt_monto.Location = new System.Drawing.Point(48, 159);
+            this.txt_monto.Location = new System.Drawing.Point(38, 203);
             this.txt_monto.Name = "txt_monto";
             this.txt_monto.Size = new System.Drawing.Size(331, 30);
             this.txt_monto.TabIndex = 3;
@@ -113,7 +111,7 @@
             this.txt_notarjeta.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_notarjeta.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_notarjeta.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txt_notarjeta.Location = new System.Drawing.Point(48, 219);
+            this.txt_notarjeta.Location = new System.Drawing.Point(38, 263);
             this.txt_notarjeta.Name = "txt_notarjeta";
             this.txt_notarjeta.Size = new System.Drawing.Size(331, 30);
             this.txt_notarjeta.TabIndex = 4;
@@ -125,7 +123,7 @@
             this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dateTimePicker1.Enabled = false;
             this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker1.Location = new System.Drawing.Point(422, 39);
+            this.dateTimePicker1.Location = new System.Drawing.Point(412, 83);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(293, 26);
             this.dateTimePicker1.TabIndex = 5;
@@ -135,7 +133,7 @@
             this.txt_cvv.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_cvv.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_cvv.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txt_cvv.Location = new System.Drawing.Point(48, 294);
+            this.txt_cvv.Location = new System.Drawing.Point(38, 338);
             this.txt_cvv.Name = "txt_cvv";
             this.txt_cvv.Size = new System.Drawing.Size(331, 30);
             this.txt_cvv.TabIndex = 6;
@@ -146,7 +144,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(48, 266);
+            this.label2.Location = new System.Drawing.Point(38, 310);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 21);
             this.label2.TabIndex = 7;
@@ -157,7 +155,7 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(437, 266);
+            this.label3.Location = new System.Drawing.Point(427, 310);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(211, 21);
             this.label3.TabIndex = 8;
@@ -168,136 +166,114 @@
             this.txt_fechav.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_fechav.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_fechav.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txt_fechav.Location = new System.Drawing.Point(437, 293);
+            this.txt_fechav.Location = new System.Drawing.Point(427, 337);
             this.txt_fechav.Name = "txt_fechav";
             this.txt_fechav.Size = new System.Drawing.Size(276, 30);
             this.txt_fechav.TabIndex = 9;
             this.txt_fechav.Text = "dd/mm/yyyy";
             // 
-            // radioButton1
+            // rb_pago
             // 
-            this.radioButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.radioButton1.Location = new System.Drawing.Point(437, 160);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(278, 25);
-            this.radioButton1.TabIndex = 10;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Pago con tarjeta de credito";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rb_pago.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.rb_pago.AutoSize = true;
+            this.rb_pago.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rb_pago.Location = new System.Drawing.Point(427, 204);
+            this.rb_pago.Name = "rb_pago";
+            this.rb_pago.Size = new System.Drawing.Size(278, 25);
+            this.rb_pago.TabIndex = 10;
+            this.rb_pago.TabStop = true;
+            this.rb_pago.Text = "Pago con tarjeta de credito";
+            this.rb_pago.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // pic1
             // 
-            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(220, 369);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(61, 32);
-            this.button4.TabIndex = 16;
-            this.button4.UseVisualStyleBackColor = true;
+            this.pic1.Image = global::Software_de_taquilla.Properties.Resources.visa;
+            this.pic1.Location = new System.Drawing.Point(437, 238);
+            this.pic1.Name = "pic1";
+            this.pic1.Size = new System.Drawing.Size(50, 35);
+            this.pic1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pic1.TabIndex = 17;
+            this.pic1.TabStop = false;
             // 
-            // button5
+            // pic2
             // 
-            this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button5.Enabled = false;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(127, 368);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(57, 33);
-            this.button5.TabIndex = 15;
-            this.button5.UseVisualStyleBackColor = true;
+            this.pic2.Image = global::Software_de_taquilla.Properties.Resources.card;
+            this.pic2.Location = new System.Drawing.Point(529, 238);
+            this.pic2.Name = "pic2";
+            this.pic2.Size = new System.Drawing.Size(62, 35);
+            this.pic2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pic2.TabIndex = 18;
+            this.pic2.TabStop = false;
             // 
-            // button6
+            // pic3
             // 
-            this.button6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button6.Enabled = false;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(43, 369);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(53, 28);
-            this.button6.TabIndex = 14;
-            this.button6.UseVisualStyleBackColor = true;
+            this.pic3.Image = global::Software_de_taquilla.Properties.Resources.american_express;
+            this.pic3.Location = new System.Drawing.Point(630, 238);
+            this.pic3.Name = "pic3";
+            this.pic3.Size = new System.Drawing.Size(58, 35);
+            this.pic3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pic3.TabIndex = 19;
+            this.pic3.TabStop = false;
             // 
-            // pictureBox1
+            // pic6
             // 
-            this.pictureBox1.Image = global::Software_de_taquilla.Properties.Resources.visa;
-            this.pictureBox1.Location = new System.Drawing.Point(462, 191);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 36);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
+            this.pic6.Image = global::Software_de_taquilla.Properties.Resources.american_express;
+            this.pic6.Location = new System.Drawing.Point(255, 407);
+            this.pic6.Name = "pic6";
+            this.pic6.Size = new System.Drawing.Size(58, 36);
+            this.pic6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pic6.TabIndex = 25;
+            this.pic6.TabStop = false;
             // 
-            // pictureBox2
+            // pic5
             // 
-            this.pictureBox2.Image = global::Software_de_taquilla.Properties.Resources.card;
-            this.pictureBox2.Location = new System.Drawing.Point(554, 191);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(62, 36);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 18;
-            this.pictureBox2.TabStop = false;
+            this.pic5.Image = global::Software_de_taquilla.Properties.Resources.card;
+            this.pic5.Location = new System.Drawing.Point(143, 407);
+            this.pic5.Name = "pic5";
+            this.pic5.Size = new System.Drawing.Size(62, 36);
+            this.pic5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pic5.TabIndex = 24;
+            this.pic5.TabStop = false;
             // 
-            // pictureBox3
+            // pic4
             // 
-            this.pictureBox3.Image = global::Software_de_taquilla.Properties.Resources.american_express;
-            this.pictureBox3.Location = new System.Drawing.Point(655, 191);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(58, 36);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox3.TabIndex = 19;
-            this.pictureBox3.TabStop = false;
+            this.pic4.Image = global::Software_de_taquilla.Properties.Resources.visa;
+            this.pic4.Location = new System.Drawing.Point(53, 407);
+            this.pic4.Name = "pic4";
+            this.pic4.Size = new System.Drawing.Size(50, 36);
+            this.pic4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pic4.TabIndex = 23;
+            this.pic4.TabStop = false;
             // 
-            // pictureBox4
+            // btn_cobro
             // 
-            this.pictureBox4.Image = global::Software_de_taquilla.Properties.Resources.american_express;
-            this.pictureBox4.Location = new System.Drawing.Point(273, 347);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(58, 36);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox4.TabIndex = 25;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::Software_de_taquilla.Properties.Resources.card;
-            this.pictureBox5.Location = new System.Drawing.Point(161, 347);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(62, 36);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox5.TabIndex = 24;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::Software_de_taquilla.Properties.Resources.visa;
-            this.pictureBox6.Location = new System.Drawing.Point(71, 347);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(50, 36);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox6.TabIndex = 23;
-            this.pictureBox6.TabStop = false;
+            this.btn_cobro.BackColor = System.Drawing.Color.SeaGreen;
+            this.btn_cobro.FlatAppearance.BorderSize = 0;
+            this.btn_cobro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cobro.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_cobro.ForeColor = System.Drawing.Color.White;
+            this.btn_cobro.Location = new System.Drawing.Point(452, 412);
+            this.btn_cobro.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_cobro.Name = "btn_cobro";
+            this.btn_cobro.Size = new System.Drawing.Size(203, 31);
+            this.btn_cobro.TabIndex = 26;
+            this.btn_cobro.Text = "Realizar Cobro";
+            this.btn_cobro.UseVisualStyleBackColor = false;
             // 
             // Pagos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(746, 417);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.radioButton1);
+            this.ClientSize = new System.Drawing.Size(726, 505);
+            this.Controls.Add(this.btn_cobro);
+            this.Controls.Add(this.pic6);
+            this.Controls.Add(this.pic5);
+            this.Controls.Add(this.pic4);
+            this.Controls.Add(this.pic3);
+            this.Controls.Add(this.pic2);
+            this.Controls.Add(this.pic1);
+            this.Controls.Add(this.rb_pago);
             this.Controls.Add(this.txt_fechav);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -308,14 +284,15 @@
             this.Controls.Add(this.txt_telefono);
             this.Controls.Add(this.txt_correo);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Pagos";
             this.Text = "Pagos";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -333,15 +310,13 @@
         private Label label2;
         private Label label3;
         private TextBox txt_fechav;
-        private RadioButton radioButton1;
-        private Button button4;
-        private Button button5;
-        private Button button6;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox5;
-        private PictureBox pictureBox6;
+        private RadioButton rb_pago;
+        private PictureBox pic1;
+        private PictureBox pic2;
+        private PictureBox pic3;
+        private PictureBox pic6;
+        private PictureBox pic5;
+        private PictureBox pic4;
+        public Button btn_cobro;
     }
 }

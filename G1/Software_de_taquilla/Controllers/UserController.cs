@@ -83,6 +83,11 @@ namespace Software_de_taquilla.Controllers
             }
             else
             {
+                if (this.view.data_grid.SelectedRows.Count <= 0)
+                {
+                    MessageBox.Show("Debe seleccionar un usuario para ser acutalizado");
+                    return;
+                }
                 string username = this.view.txt_name.Text;
                 string pass = this.view.txt_contrasenia.Text;
                 int rol = Convert.ToInt32(this.view.role_list.SelectedIndex + 1);
