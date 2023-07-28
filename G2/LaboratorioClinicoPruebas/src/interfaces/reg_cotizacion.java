@@ -14,8 +14,23 @@ public class reg_cotizacion extends javax.swing.JPanel {
     public reg_cotizacion() {
         initComponents();
         
-        //INSTRUCCIÓN
+        //Activará la secuencia del botÓn de BUSQUEDA de LABORATORIOS
+        btnBuscar.addActionListener((ActionEvent evt) -> {
+            try {
+                buscarLaboratorio();
+            } catch (SQLException ex) {
+                Logger.getLogger(reg_cotizacion.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        });
+        //Activará la secuencia del botón de BUSQUEDA de PACIENTES
+        btncliente_buscar = new javax.swing.JButton();
+        btncliente_buscar.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+            btncliente_buscarActionPerformed(evt);
+        }
+    });
     }
+
 
     private operaciones GP = new operaciones();
     
@@ -365,10 +380,72 @@ public class reg_cotizacion extends javax.swing.JPanel {
         
         //INSTRUCCION
         
+        String numeroExpedienteStr = JOptionPane.showInputDialog(this, "Ingrese el número de expediente del paciente:", "Buscar paciente por número de expediente", JOptionPane.QUESTION_MESSAGE);
+    
+    if (numeroExpedienteStr != null && !numeroExpedienteStr.isEmpty()) {
+        try {
+            int id_expediente = Integer.parseInt(numeroExpedienteStr);
+            ResultSet rs = GP.selectDatos(id_expediente);
+            if (rs.next()) {
+                // El registro con el número de expediente especificado se encontró en la base de datos
+                String nombre_pa = rs.getString("nombre_ex");
+                String telefono_pa = rs.getString("telefono_ex");
+                String nit_pa = rs.getString("nit_ex");
+                String direccion_pa = rs.getString("direccion_ex");
+                String quienref_pa = rs.getString("quien_refiere");
+
+                // Mostrar los datos en los campos de texto
+                txt_cotizanombre.setText(nombre_pa);
+                txt_cotizatel.setText(telefono_pa);
+                txt_cotizanit.setText(nit_pa);
+                txt_cotizadireccion.setText(direccion_pa);
+                txt_cotizareff.setText(quienref_pa);
+
+                JOptionPane.showMessageDialog(this, "Registro encontrado");
+            } else {
+                // No se encontró el registro con el número de expediente especificado
+                JOptionPane.showMessageDialog(this, "No se encontró el registro con el número de expediente especificado", "Error", JOptionPane.ERROR_MESSAGE);
+            }
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(this, "Error al buscar el registro: " + ex, "Error", JOptionPane.ERROR_MESSAGE);
+        }   catch (SQLException ex) {
+                Logger.getLogger(reg_cotizacion.class.getName()).log(Level.SEVERE, null, ex);
+            }
+    } else {
+        JOptionPane.showMessageDialog(this, "Ingrese un número de expediente para buscar el registro", "Advertencia", JOptionPane.WARNING_MESSAGE);
+    }
     }//GEN-LAST:event_btncliente_buscarActionPerformed
 
     //INSTRUCCION
-    
+    private void buscarLaboratorio() throws SQLException {
+        // Obtener el número de laboratorio a buscar del JTextField "buscar_nolab"
+        String numeroLabStr = buscar_nolab.getText();
+        
+        if (!numeroLabStr.isEmpty()) {
+            try {
+                int codigo_lab = Integer.parseInt(numeroLabStr);
+                
+                // Llamar al método buscarLaboratorioPorCodigo de la clase operaciones
+                ResultSet rs = GP.buscarLaboratorioPorCodigo(codigo_lab);
+                
+                if (rs != null && rs.next()) {
+                    // Si se encontró el laboratorio, obtener el nombre del laboratorio del ResultSet
+                    String nombre_lab = rs.getString("nombre_lab");
+                    
+                    // Mostrar el nombre del laboratorio en el JTextField "txt_nombrelab"
+                    txt_nombrelab.setText(nombre_lab);
+                } else {
+                    // Si no se encontró el laboratorio, mostrar un mensaje de error
+                    JOptionPane.showMessageDialog(null, "No se encontró el laboratorio con el número especificado");
+                }
+            } catch (NumberFormatException | SQLException ex) {
+                // Manejar errores de conversión de número y excepciones SQL
+                JOptionPane.showMessageDialog(null, "Error al buscar el laboratorio: " + ex);
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "Ingrese un número de laboratorio para buscar");
+        }
+    }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBuscar;
