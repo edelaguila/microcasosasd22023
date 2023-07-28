@@ -16,8 +16,18 @@ public class reg_cotizacion extends javax.swing.JPanel {
         
         //INSTRUCCIÓN
     }
-
+// inicializacion de variables
+    public static String nombrelab = "";
+    public static String nit ="";
+    public static String telefono = "";
+    public static String nombrepa = "";
+    public static String direccion ="";
+    public static String referencia  = "";
+    public static String pago ="";
+    public static String cargo = "";
+    public static String descuento ="";
     private operaciones GP = new operaciones();
+// inicializacion de variables
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -36,8 +46,7 @@ public class reg_cotizacion extends javax.swing.JPanel {
         jTextField10 = new javax.swing.JTextField();
         jLabel13 = new javax.swing.JLabel();
         btnBuscar = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        btnImprEnv = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         txt_cotizanit = new javax.swing.JTextField();
@@ -100,11 +109,13 @@ public class reg_cotizacion extends javax.swing.JPanel {
             }
         });
 
-        jButton3.setBackground(new java.awt.Color(204, 204, 204));
-        jButton3.setText("IMPRESIÓN");
-
-        jButton4.setBackground(new java.awt.Color(204, 204, 204));
-        jButton4.setText("ENVÍO");
+        btnImprEnv.setBackground(new java.awt.Color(204, 204, 204));
+        btnImprEnv.setText("IMPRESION/ENVIO");
+        btnImprEnv.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnImprEnvActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -144,10 +155,8 @@ public class reg_cotizacion extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(33, 33, 33)
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(30, 30, 30)
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(36, 36, 36))))
+                        .addComponent(btnImprEnv)
+                        .addGap(153, 153, 153))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -165,8 +174,7 @@ public class reg_cotizacion extends javax.swing.JPanel {
                             .addComponent(jLabel12)
                             .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnImprEnv, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel10))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -311,7 +319,7 @@ public class reg_cotizacion extends javax.swing.JPanel {
                     .addComponent(jLabel18)
                     .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(16, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btncliente_buscar, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -335,7 +343,7 @@ public class reg_cotizacion extends javax.swing.JPanel {
                 .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -367,15 +375,28 @@ public class reg_cotizacion extends javax.swing.JPanel {
         
     }//GEN-LAST:event_btncliente_buscarActionPerformed
 
+    private void btnImprEnvActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnImprEnvActionPerformed
+        nombrelab = txt_nombrelab.getText();
+        nit = txt_cotizanit.getText();
+        telefono = txt_cotizatel.getText();
+        nombrepa = txt_cotizanombre.getText();
+        direccion = txt_cotizadireccion.getText();
+        referencia  = txt_cotizareff.getText();
+        pago = jComboBox1.getSelectedItem().toString();
+        cargo = jTextField10.getText();
+        descuento = jTextField7.getText();
+        interfazimprimir imprimir = new interfazimprimir();
+        imprimir.setVisible(true);  
+    }//GEN-LAST:event_btnImprEnvActionPerformed
+
     //INSTRUCCION
     
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBuscar;
+    private javax.swing.JButton btnImprEnv;
     private javax.swing.JButton btncliente_buscar;
     private javax.swing.JTextField buscar_nolab;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
