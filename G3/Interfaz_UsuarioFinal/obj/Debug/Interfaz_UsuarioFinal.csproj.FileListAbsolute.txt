@@ -1,0 +1,11 @@
+D:\8VO_SEMESTRE\ANALISIS_II\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.Properties.Resources.resources
+D:\8VO_SEMESTRE\ANALISIS_II\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.csproj.GenerateResource.cache
+D:\8VO_SEMESTRE\ANALISIS_II\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.csproj.CoreCompileInputs.cache
+D:\8VO_SEMESTRE\ANALISIS_II\microcasosasd22023\G3\Interfaz_UsuarioFinal\bin\Debug\Interfaz_UsuarioFinal.exe.config
+D:\8VO_SEMESTRE\ANALISIS_II\microcasosasd22023\G3\Interfaz_UsuarioFinal\bin\Debug\Interfaz_UsuarioFinal.exe
+D:\8VO_SEMESTRE\ANALISIS_II\microcasosasd22023\G3\Interfaz_UsuarioFinal\bin\Debug\Interfaz_UsuarioFinal.pdb
+D:\8VO_SEMESTRE\ANALISIS_II\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.exe
+D:\8VO_SEMESTRE\ANALISIS_II\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.pdb
+D:\8VO_SEMESTRE\ANALISIS_II\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.InicioSesion.resources
+D:\8VO_SEMESTRE\ANALISIS_II\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.Menu_Principal.resources
+D:\8VO_SEMESTRE\ANALISIS_II\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.Registro.resources
