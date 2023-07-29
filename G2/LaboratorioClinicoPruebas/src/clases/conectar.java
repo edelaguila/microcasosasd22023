@@ -9,10 +9,10 @@ import javax.swing.JOptionPane;
 public class conectar {
     
     private static Connection conn;
-    private static final String DRIVER = "com.mysql.jdbc.Driver";
-    private static final String USER = "root";
-    private static final String PASSWORD = "12345";
-    private static final String URL = "jdbc:mysql://localhost:3306/labclinico?characterEncoding=UTF-8";
+    private static final String DRIVER = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
+    private static final String USER = "adminclinico";
+    private static final String PASSWORD = "LaboratorioClinico+13";
+    private static final String URL = "jdbc:sqlserver://servidorclinico.database.windows.net:1433;database=BaseClinica;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
 
     public conectar() {
         conn = null;
