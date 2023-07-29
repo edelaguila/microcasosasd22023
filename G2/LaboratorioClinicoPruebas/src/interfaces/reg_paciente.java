@@ -443,15 +443,81 @@ public class reg_paciente extends javax.swing.JPanel {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        // Activará las funciones respectivas para ANTERIOR información en la base de datos
+        //boton anterior
         
+// Activará las funciones respectivas para ANTERIOR información en la base de datos
+        String numeroExpedienteStr = txt_buscar.getText();
+    if (!numeroExpedienteStr.isEmpty()) {
+        try {
+            int numeroExpedienteActual = Integer.parseInt(numeroExpedienteStr);
+            int numeroExpedienteAnterior = numeroExpedienteActual - 1;
+            ResultSet rs = GP.selectDatos(numeroExpedienteAnterior);
+            if (rs.next()) {
+                // Se encontró el registro anterior en la base de datos
+                mostrarDatos(rs);
+            } else {
+                // No se encontró el registro anterior, puede ser el primer registro
+                JOptionPane.showMessageDialog(null, "No se encontró el registro anterior");
+            }
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(null, "Ingrese un valor de número de expediente válido");
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, "Error al buscar el registro: " + ex);
+        }
+    } else {
+        // Si no hay número de expediente en el campo de texto, mostrar el último registro
+        try {
+            ResultSet rs = GP.selectDatos(-1); // Aquí enviamos el valor -1 para obtener el último registro
+            if (rs.last()) {
+                mostrarDatos(rs);
+            } else {
+                // No se encontraron registros en la base de datos
+                JOptionPane.showMessageDialog(null, "No se encontraron registros en la base de datos");
+            }
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, "Error al buscar el registro: " + ex);
+        }
+    }
         //INSTRUCCION
+        
         
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // Activará las funciones respectivas para SIGUIENTE información en la base de datos
-        
+        //Boton Siguiente
+        String numeroExpedienteStr = txt_buscar.getText();
+    if (!numeroExpedienteStr.isEmpty()) {
+        try {
+            int numeroExpedienteActual = Integer.parseInt(numeroExpedienteStr);
+            int numeroExpedienteSiguiente = numeroExpedienteActual + 1;
+            ResultSet rs = GP.selectDatos(numeroExpedienteSiguiente);
+            if (rs.next()) {
+                // Se encontró el registro siguiente en la base de datos
+                mostrarDatos(rs);
+            } else {
+                // No se encontró el registro siguiente, puede ser el último registro
+                JOptionPane.showMessageDialog(null, "No se encontró el registro siguiente");
+            }
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(null, "Ingrese un valor de número de expediente válido");
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, "Error al buscar el registro: " + ex);
+        }
+    } else {
+        // Si no hay número de expediente en el campo de texto, mostrar el primer registro
+        try {
+            ResultSet rs = GP.selectDatos(1); // Aquí enviamos el valor 1 para obtener el primer registro
+            if (rs.next()) {
+                mostrarDatos(rs);
+            } else {
+                // No se encontraron registros en la base de datos
+                JOptionPane.showMessageDialog(null, "No se encontraron registros en la base de datos");
+            }
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, "Error al buscar el registro: " + ex);
+        }
+    }
         //INSTRUCCION
         
     }//GEN-LAST:event_jButton5ActionPerformed
