@@ -398,7 +398,48 @@ public class reg_paciente extends javax.swing.JPanel {
         // Activará las funciones respectivas para BUSCAR información en la base de datos
         
         //INSTRUCCION
-        
+        String numeroExpedienteStr = txt_buscar.getText();
+        if (!numeroExpedienteStr.isEmpty()) {
+        try {
+        id_expediente = Integer.parseInt(numeroExpedienteStr);
+        ResultSet rs = GP.selectDatos(id_expediente);
+        if (rs.next()) {
+            // El registro con el número de expediente especificado se encontró en la base de datos
+            nombre_pa = rs.getString("nombre_ex");
+            sexo_pa = rs.getString("genero_ex");
+            telefono_pa = rs.getString("telefono_ex");
+            nit_pa = rs.getString("nit_ex");
+            direccion_pa = rs.getString("direccion_ex");
+            quienref_pa = rs.getString("quien_refiere");
+            cod_aux_pa = rs.getString("codigo_auxiliar");
+            tipo_muestra_pa = rs.getString("tipo_muestra");
+            fecha_nacimiento_pa = rs.getString("fecha_nacimiento");
+
+            // Mostrar los datos en los campos de texto
+            txt_nombre.setText(nombre_pa);
+            comb_sexo.setSelectedItem(sexo_pa);
+            txt_telefono.setText(telefono_pa);
+            txt_nit.setText(nit_pa);
+            txt_direccion.setText(direccion_pa);
+            txt_quienref.setText(quienref_pa);
+            txt_codaux.setText(cod_aux_pa);
+            comb_tipomuestra.setSelectedItem(tipo_muestra_pa);
+            txt_nacimiento.setText(fecha_nacimiento_pa);
+
+            JOptionPane.showMessageDialog(null, "Registro encontrado");
+        } else {
+            // No se encontró el registro con el número de expediente especificado
+            JOptionPane.showMessageDialog(null, "No se encontró el registro con el número de expediente especificado");
+        }
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(null, "Error al buscar el registro: " + ex);
+    }       catch (SQLException ex) {
+                Logger.getLogger(reg_paciente.class.getName()).log(Level.SEVERE, null, ex);
+            }
+    } else {
+        JOptionPane.showMessageDialog(null, "Ingrese un número de expediente para buscar el registro");
+    }
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
@@ -482,7 +523,30 @@ public class reg_paciente extends javax.swing.JPanel {
     }//GEN-LAST:event_jButton5ActionPerformed
 
     //INSTRUCCION
+    private void mostrarDatos(ResultSet rs) throws SQLException {
+        nombre_pa = rs.getString("nombre_ex");
+        sexo_pa = rs.getString("genero_ex");
+        telefono_pa = rs.getString("telefono_ex");
+        nit_pa = rs.getString("nit_ex");
+        direccion_pa = rs.getString("direccion_ex");
+        quienref_pa = rs.getString("quien_refiere");
+        cod_aux_pa = rs.getString("codigo_auxiliar");
+        tipo_muestra_pa = rs.getString("tipo_muestra");
+        fecha_nacimiento_pa = rs.getString("fecha_nacimiento");
 
+        // Mostrar los datos en los campos de texto
+        txt_nombre.setText(nombre_pa);
+        comb_sexo.setSelectedItem(sexo_pa);
+        txt_telefono.setText(telefono_pa);
+        txt_nit.setText(nit_pa);
+        txt_direccion.setText(direccion_pa);
+        txt_quienref.setText(quienref_pa);
+        txt_codaux.setText(cod_aux_pa);
+        comb_tipomuestra.setSelectedItem(tipo_muestra_pa);
+        txt_nacimiento.setText(fecha_nacimiento_pa);
+
+        JOptionPane.showMessageDialog(null, "Registro encontrado");
+    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> comb_sexo;
     private javax.swing.JComboBox<String> comb_tipomuestra;
