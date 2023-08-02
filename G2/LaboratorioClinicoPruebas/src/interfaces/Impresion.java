@@ -34,6 +34,7 @@ public class Impresion extends javax.swing.JPanel implements Printable {
         txt_tipoprecio.setText(cotiza.pago);
         txt_cargo.setText(cotiza.cargo);
         txtdescuento.setText(cotiza.descuento);
+        txtfecha.setText(cotiza.fecha);
         
         
         /*double precio,descuento,total;
@@ -77,8 +78,6 @@ public class Impresion extends javax.swing.JPanel implements Printable {
         jLabel7 = new javax.swing.JLabel();
         txt_cargo = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        txttotal = new javax.swing.JTextField();
         txt_tipoprecio = new javax.swing.JTextField();
 
         setBackground(new java.awt.Color(255, 255, 255));
@@ -140,30 +139,12 @@ public class Impresion extends javax.swing.JPanel implements Printable {
         jLabel12.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel12.setText("Cargo:");
 
-        jLabel19.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel19.setText("TOTAL");
-
-        txttotal.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jLabel17))
-                            .addComponent(jLabel19))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(txtdescuento)
-                            .addComponent(txt_cargo)
-                            .addComponent(txttotal, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 280, Short.MAX_VALUE))
-                        .addGap(114, 114, 114))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(19, 19, 19)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -208,7 +189,16 @@ public class Impresion extends javax.swing.JPanel implements Printable {
                                     .addComponent(jLabel14)
                                     .addGap(18, 18, 18)
                                     .addComponent(txt_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 423, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel5))))
+                                .addComponent(jLabel5))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel17))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(txtdescuento)
+                                    .addComponent(txt_cargo, javax.swing.GroupLayout.DEFAULT_SIZE, 309, Short.MAX_VALUE))
+                                .addGap(114, 114, 114))))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                         .addGap(330, 330, 330)
                         .addComponent(jLabel18)
@@ -269,11 +259,7 @@ public class Impresion extends javax.swing.JPanel implements Printable {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel17)
                     .addComponent(txtdescuento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel19)
-                    .addComponent(txttotal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 36, Short.MAX_VALUE))
+                .addGap(0, 77, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -286,7 +272,6 @@ public class Impresion extends javax.swing.JPanel implements Printable {
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -304,7 +289,6 @@ public class Impresion extends javax.swing.JPanel implements Printable {
     private javax.swing.JTextField txtfecha;
     private javax.swing.JTextField txtlabo;
     private javax.swing.JTextField txttelefono;
-    private javax.swing.JTextField txttotal;
     // End of variables declaration//GEN-END:variables
 
     @Override
