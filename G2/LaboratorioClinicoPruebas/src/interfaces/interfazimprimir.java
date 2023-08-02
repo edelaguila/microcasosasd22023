@@ -43,11 +43,19 @@ public class interfazimprimir extends javax.swing.JFrame {
     }
     
     private void createEmail(){
-         reg_cotizacion cotiza = new reg_cotizacion();
-            
+        
+        reg_cotizacion cotiza = new reg_cotizacion();
+        String cuerpo = "<h1>Cotizacion</h1><br>"+ 
+                "<br><h4>Fecha" +cotiza.fecha+
+                "<br><h4>Laboratorio Asignado" +cotiza.nombrelab+
+                "<br>Nombre Paciente: "+cotiza.nombrepa+
+                "<br>NIT: "+cotiza.nit+
+                "<br>Direccion: " + cotiza.direccion+
+                "<br>Monto a pagar" + cotiza.cargo+"</h4>";       
         emailTo = correo.getText().trim();
         subject = "Cotizacion";
-        content = "Nombre"+cotiza.nombrepa+"\n Hola mundo";
+        
+        content = cuerpo;
         
         //Simple mail transfer protocol
         mProperties.put("mail.smtp.host", "smtp.gmail.com");
@@ -102,8 +110,6 @@ public class interfazimprimir extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         correo = new javax.swing.JTextField();
-
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jButton1.setText("IMPRIMIR");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
