@@ -1,0 +1,4 @@
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\Polideportivo\microcasosasd22023\G3\Interface_Usuario1\Interface_Usuario1\obj\Debug\Interface_Usuario1.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\Polideportivo\microcasosasd22023\G3\Interface_Usuario1\Interface_Usuario1\obj\Debug\Interface_Usuario1.Properties.Resources.resources
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\Polideportivo\microcasosasd22023\G3\Interface_Usuario1\Interface_Usuario1\obj\Debug\Interface_Usuario1.csproj.GenerateResource.cache
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\Polideportivo\microcasosasd22023\G3\Interface_Usuario1\Interface_Usuario1\obj\Debug\Interface_Usuario1.csproj.CoreCompileInputs.cache
