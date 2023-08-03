@@ -10,11 +10,13 @@ namespace Software_de_taquilla.Models.Dto
     {
         public int numero;
         public int id_sala;
+        public int estado;
 
-        public Asiento(int numero, int id_sala)
+        public Asiento(int numero, int id_sala, int estado)
         {
             this.numero = numero;
             this.id_sala = id_sala;
+            this.estado = estado;
         }
 
         public Asiento(int id_sala)

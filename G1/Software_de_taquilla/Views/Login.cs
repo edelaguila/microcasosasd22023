@@ -19,20 +19,12 @@ namespace Software_de_taquilla.Views
             LoginController usr = new LoginController(this);
         }
 
-        private void Login_Load(object sender, EventArgs e)
-        {
-
-        }
 
         public void printMessage(string message)
         {
             MessageBox.Show(message);
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void txt_user_Click(object sender, EventArgs e)
         {
@@ -61,24 +53,5 @@ namespace Software_de_taquilla.Views
             txt_pass.PasswordChar = '\0';
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void Login_Load_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }

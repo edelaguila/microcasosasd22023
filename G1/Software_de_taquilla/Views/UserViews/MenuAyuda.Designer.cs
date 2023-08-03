@@ -28,160 +28,162 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.txt_telefonoayuda = new System.Windows.Forms.TextBox();
-            this.txt_correoayuda = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            this.SuspendLayout();
+            label1 = new Label();
+            button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
+            panel1 = new Panel();
+            button4 = new Button();
+            txt_telefonoayuda = new TextBox();
+            txt_correoayuda = new TextBox();
+            label4 = new Label();
+            label3 = new Label();
+            panel1.SuspendLayout();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bookman Old Style", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(62)))), ((int)(((byte)(85)))));
-            this.label1.Location = new System.Drawing.Point(27, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(278, 40);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Menú de Ayuda";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            label1.Anchor = AnchorStyles.None;
+            label1.AutoSize = true;
+            label1.Font = new Font("Bookman Old Style", 19.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.FromArgb(12, 62, 85);
+            label1.Location = new Point(24, 14);
+            label1.Name = "label1";
+            label1.Size = new Size(227, 32);
+            label1.TabIndex = 0;
+            label1.Text = "Menú de Ayuda";
             // 
             // button1
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Image = global::Software_de_taquilla.Properties.Resources.manual3;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(154, 75);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(632, 66);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Manual de Usuario";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            button1.Anchor = AnchorStyles.None;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.Image = Properties.Resources.manual3;
+            button1.ImageAlign = ContentAlignment.MiddleLeft;
+            button1.Location = new Point(135, 56);
+            button1.Margin = new Padding(3, 2, 3, 2);
+            button1.Name = "button1";
+            button1.Size = new Size(553, 50);
+            button1.TabIndex = 1;
+            button1.Text = "Manual de Usuario";
+            button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.Image = global::Software_de_taquilla.Properties.Resources.ask1;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(154, 147);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(630, 67);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Preguntas frecuentes";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            button2.Anchor = AnchorStyles.None;
+            button2.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            button2.Image = Properties.Resources.ask1;
+            button2.ImageAlign = ContentAlignment.MiddleLeft;
+            button2.Location = new Point(135, 110);
+            button2.Margin = new Padding(3, 2, 3, 2);
+            button2.Name = "button2";
+            button2.Size = new Size(551, 50);
+            button2.TabIndex = 2;
+            button2.Text = "Preguntas frecuentes";
+            button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.Image = global::Software_de_taquilla.Properties.Resources.dictionary1;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(156, 228);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(632, 67);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Diccionario de conceptos";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            button3.Anchor = AnchorStyles.None;
+            button3.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            button3.Image = Properties.Resources.dictionary1;
+            button3.ImageAlign = ContentAlignment.MiddleLeft;
+            button3.Location = new Point(136, 171);
+            button3.Margin = new Padding(3, 2, 3, 2);
+            button3.Name = "button3";
+            button3.Size = new Size(553, 50);
+            button3.TabIndex = 3;
+            button3.Text = "Diccionario de conceptos";
+            button3.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.txt_telefonoayuda);
-            this.panel1.Controls.Add(this.txt_correoayuda);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(153, 301);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(633, 151);
-            this.panel1.TabIndex = 8;
+            panel1.Anchor = AnchorStyles.None;
+            panel1.Controls.Add(button4);
+            panel1.Controls.Add(txt_telefonoayuda);
+            panel1.Controls.Add(txt_correoayuda);
+            panel1.Controls.Add(label4);
+            panel1.Controls.Add(label3);
+            panel1.Location = new Point(134, 226);
+            panel1.Margin = new Padding(3, 2, 3, 2);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(554, 113);
+            panel1.TabIndex = 8;
             // 
             // button4
             // 
-            this.button4.Enabled = false;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Image = global::Software_de_taquilla.Properties.Resources.headphones1;
-            this.button4.Location = new System.Drawing.Point(3, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(59, 70);
-            this.button4.TabIndex = 5;
-            this.button4.UseVisualStyleBackColor = true;
+            button4.Enabled = false;
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Image = Properties.Resources.headphones1;
+            button4.Location = new Point(3, 2);
+            button4.Margin = new Padding(3, 2, 3, 2);
+            button4.Name = "button4";
+            button4.Size = new Size(52, 52);
+            button4.TabIndex = 5;
+            button4.UseVisualStyleBackColor = true;
             // 
             // txt_telefonoayuda
             // 
-            this.txt_telefonoayuda.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_telefonoayuda.Location = new System.Drawing.Point(85, 108);
-            this.txt_telefonoayuda.Name = "txt_telefonoayuda";
-            this.txt_telefonoayuda.Size = new System.Drawing.Size(504, 26);
-            this.txt_telefonoayuda.TabIndex = 4;
-            this.txt_telefonoayuda.Click += new System.EventHandler(this.txt_telefonoayuda_Click);
-            this.txt_telefonoayuda.Leave += new System.EventHandler(this.txt_telefonoayuda_Leave);
+            txt_telefonoayuda.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_telefonoayuda.Location = new Point(217, 81);
+            txt_telefonoayuda.Margin = new Padding(3, 2, 3, 2);
+            txt_telefonoayuda.Name = "txt_telefonoayuda";
+            txt_telefonoayuda.Size = new Size(183, 22);
+            txt_telefonoayuda.TabIndex = 4;
+            txt_telefonoayuda.Click += txt_telefonoayuda_Click;
+            txt_telefonoayuda.Leave += txt_telefonoayuda_Leave;
             // 
             // txt_correoayuda
             // 
-            this.txt_correoayuda.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_correoayuda.Location = new System.Drawing.Point(85, 47);
-            this.txt_correoayuda.Name = "txt_correoayuda";
-            this.txt_correoayuda.Size = new System.Drawing.Size(504, 26);
-            this.txt_correoayuda.TabIndex = 3;
-            this.txt_correoayuda.Click += new System.EventHandler(this.txt_correoayuda_Click);
-            this.txt_correoayuda.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            this.txt_correoayuda.Leave += new System.EventHandler(this.txt_correoayuda_Leave);
+            txt_correoayuda.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_correoayuda.Location = new Point(217, 35);
+            txt_correoayuda.Margin = new Padding(3, 2, 3, 2);
+            txt_correoayuda.Name = "txt_correoayuda";
+            txt_correoayuda.Size = new Size(183, 22);
+            txt_correoayuda.TabIndex = 3;
+            txt_correoayuda.Click += txt_correoayuda_Click;
+            txt_correoayuda.Leave += txt_correoayuda_Leave;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(62, 31);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 20);
-            this.label4.TabIndex = 2;
+            label4.AutoSize = true;
+            label4.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(54, 23);
+            label4.Name = "label4";
+            label4.Size = new Size(0, 17);
+            label4.TabIndex = 2;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(62, 11);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(569, 20);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Si tienes otra pregunta, te contactariamos via correo electrónico o teléfono.";
+            label3.AutoSize = true;
+            label3.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(54, 8);
+            label3.Name = "label3";
+            label3.Size = new Size(467, 17);
+            label3.TabIndex = 0;
+            label3.Text = "Si tienes otra pregunta, te contactariamos via correo electrónico o teléfono.";
             // 
             // MenuAyuda
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(875, 539);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximumSize = new System.Drawing.Size(950, 600);
-            this.Name = "MenuAyuda";
-            this.Text = "MenuAyuda";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            ClientSize = new Size(766, 404);
+            Controls.Add(panel1);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
+            MaximumSize = new Size(831, 450);
+            Name = "MenuAyuda";
+            Text = "MenuAyuda";
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

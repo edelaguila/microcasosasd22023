@@ -32,11 +32,6 @@ namespace Software_de_taquilla.Views.AdminViews
             Pic_Perfil.BorderStyle = BorderStyle.None;
         }
 
-        private void DashboardAdmin_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void pic_exit_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -76,6 +71,16 @@ namespace Software_de_taquilla.Views.AdminViews
         private void btn_reportes_Click(object sender, EventArgs e)
         {
             this.openForm(new AdminViews.ReportesMensuales());
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btn_inicio_Click(object sender, EventArgs e)
+        {
+            this.openForm(new AdminViews.Horarios());
         }
     }
 }

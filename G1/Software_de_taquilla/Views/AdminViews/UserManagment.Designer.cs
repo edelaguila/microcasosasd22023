@@ -73,7 +73,7 @@
             data_grid.RowHeadersWidth = 51;
             data_grid.RowTemplate.Height = 25;
             data_grid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            data_grid.Size = new Size(682, 296);
+            data_grid.Size = new Size(665, 296);
             data_grid.TabIndex = 4;
             // 
             // btn_save
@@ -139,7 +139,7 @@
             btn_delete.FlatStyle = FlatStyle.Flat;
             btn_delete.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btn_delete.ForeColor = Color.White;
-            btn_delete.Location = new Point(868, 427);
+            btn_delete.Location = new Point(854, 403);
             btn_delete.Name = "btn_delete";
             btn_delete.Size = new Size(103, 23);
             btn_delete.TabIndex = 10;
@@ -153,7 +153,7 @@
             btn_update.FlatStyle = FlatStyle.Flat;
             btn_update.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btn_update.ForeColor = Color.White;
-            btn_update.Location = new Point(710, 427);
+            btn_update.Location = new Point(696, 403);
             btn_update.Name = "btn_update";
             btn_update.Size = new Size(103, 23);
             btn_update.TabIndex = 11;

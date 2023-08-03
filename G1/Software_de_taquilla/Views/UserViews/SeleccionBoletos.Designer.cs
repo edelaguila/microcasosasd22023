@@ -130,8 +130,9 @@
             // 
             // txt_n1
             // 
+            this.txt_n1.BackColor = System.Drawing.Color.White;
             this.txt_n1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_n1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_n1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_n1.Location = new System.Drawing.Point(522, 245);
             this.txt_n1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_n1.Multiline = true;
@@ -143,8 +144,9 @@
             // 
             // txt_n2
             // 
+            this.txt_n2.BackColor = System.Drawing.Color.White;
             this.txt_n2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_n2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_n2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_n2.Location = new System.Drawing.Point(522, 327);
             this.txt_n2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_n2.Multiline = true;
@@ -156,8 +158,9 @@
             // 
             // txt_n3
             // 
+            this.txt_n3.BackColor = System.Drawing.Color.White;
             this.txt_n3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_n3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_n3.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_n3.Location = new System.Drawing.Point(522, 408);
             this.txt_n3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_n3.Multiline = true;
@@ -169,7 +172,7 @@
             // 
             // btna_1
             // 
-            this.btna_1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btna_1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btna_1.Location = new System.Drawing.Point(625, 245);
             this.btna_1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btna_1.Name = "btna_1";
@@ -177,10 +180,11 @@
             this.btna_1.TabIndex = 11;
             this.btna_1.Text = "+";
             this.btna_1.UseVisualStyleBackColor = true;
+            this.btna_1.Click += new System.EventHandler(this.btna_1_Click);
             // 
             // btna_2
             // 
-            this.btna_2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btna_2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btna_2.Location = new System.Drawing.Point(680, 245);
             this.btna_2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btna_2.Name = "btna_2";
@@ -189,10 +193,11 @@
             this.btna_2.Text = "-";
             this.btna_2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btna_2.UseVisualStyleBackColor = true;
+            this.btna_2.Click += new System.EventHandler(this.btna_2_Click);
             // 
             // btnn_2
             // 
-            this.btnn_2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnn_2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnn_2.Location = new System.Drawing.Point(680, 327);
             this.btnn_2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnn_2.Name = "btnn_2";
@@ -201,10 +206,11 @@
             this.btnn_2.Text = "-";
             this.btnn_2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnn_2.UseVisualStyleBackColor = true;
+            this.btnn_2.Click += new System.EventHandler(this.btnn_2_Click);
             // 
             // btnn_1
             // 
-            this.btnn_1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnn_1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnn_1.Location = new System.Drawing.Point(625, 327);
             this.btnn_1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnn_1.Name = "btnn_1";
@@ -212,10 +218,11 @@
             this.btnn_1.TabIndex = 13;
             this.btnn_1.Text = "+";
             this.btnn_1.UseVisualStyleBackColor = true;
+            this.btnn_1.Click += new System.EventHandler(this.btnn_1_Click);
             // 
             // btn_e2
             // 
-            this.btn_e2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_e2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_e2.Location = new System.Drawing.Point(680, 408);
             this.btn_e2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_e2.Name = "btn_e2";
@@ -224,10 +231,11 @@
             this.btn_e2.Text = "-";
             this.btn_e2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btn_e2.UseVisualStyleBackColor = true;
+            this.btn_e2.Click += new System.EventHandler(this.btn_e2_Click);
             // 
             // btn_e1
             // 
-            this.btn_e1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_e1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_e1.Location = new System.Drawing.Point(625, 408);
             this.btn_e1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_e1.Name = "btn_e1";
@@ -235,6 +243,7 @@
             this.btn_e1.TabIndex = 15;
             this.btn_e1.Text = "+";
             this.btn_e1.UseVisualStyleBackColor = true;
+            this.btn_e1.Click += new System.EventHandler(this.btn_e1_Click);
             // 
             // btn_continuar
             // 
@@ -250,6 +259,7 @@
             this.btn_continuar.TabIndex = 17;
             this.btn_continuar.Text = "CONTINUAR";
             this.btn_continuar.UseVisualStyleBackColor = false;
+            this.btn_continuar.Click += new System.EventHandler(this.btn_continuar_Click);
             // 
             // SeleccionBoletos
             // 

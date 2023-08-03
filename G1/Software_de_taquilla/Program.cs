@@ -8,8 +8,19 @@ namespace Software_de_taquilla
         [STAThread]
         static void Main()
         {
-            ApplicationConfiguration.Initialize();
-            Application.Run(new Login());
+            try
+            {
+
+                ApplicationConfiguration.Initialize();
+                Application.Run(new Login());
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error al iniciar la aplicación: " + ex.Message,
+               "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
         }
     }
 }

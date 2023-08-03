@@ -12,21 +12,33 @@ namespace Software_de_taquilla.Models.Dao
     {
         public List<Role> getRoles()
         {
-            this.connection.Open();
-            List<Role> roles = new List<Role>();
-            string sql = "select * from rol";
-            MySqlCommand cursor = new MySqlCommand(sql, this.connection);
-            MySqlDataReader reader = cursor.ExecuteReader();
-            while (reader.Read())
+            try
             {
-                int id = reader.GetInt32(0);
-                string desc = reader.GetString(1);
-                int n = reader.GetInt32(2);
-                Role role = new Role(id, desc, n);
-                roles.Add(role);
+
+                this.connection.Open();
+                List<Role> roles = new List<Role>();
+                string sql = "select * from rol";
+                MySqlCommand cursor = new MySqlCommand(sql, this.connection);
+                MySqlDataReader reader = cursor.ExecuteReader();
+                while (reader.Read())
+                {
+                    int id = reader.GetInt32(0);
+                    string desc = reader.GetString(1);
+                    int n = reader.GetInt32(2);
+                    Role role = new Role(id, desc, n);
+                    roles.Add(role);
+                }
+                this.connection.Close();
+                return roles;
             }
-            this.connection.Close();
-            return roles;
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error al obtener los roles: " + ex.Message,
+               "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null;
+            }
+
         }
     }
 }

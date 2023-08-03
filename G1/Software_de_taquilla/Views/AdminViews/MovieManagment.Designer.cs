@@ -57,7 +57,7 @@
             btn_update.FlatStyle = FlatStyle.Flat;
             btn_update.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btn_update.ForeColor = Color.White;
-            btn_update.Location = new Point(740, 464);
+            btn_update.Location = new Point(709, 463);
             btn_update.Name = "btn_update";
             btn_update.Size = new Size(103, 23);
             btn_update.TabIndex = 22;
@@ -71,7 +71,7 @@
             btn_delete.FlatStyle = FlatStyle.Flat;
             btn_delete.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btn_delete.ForeColor = Color.White;
-            btn_delete.Location = new Point(895, 464);
+            btn_delete.Location = new Point(864, 463);
             btn_delete.Name = "btn_delete";
             btn_delete.Size = new Size(103, 23);
             btn_delete.TabIndex = 21;
@@ -99,7 +99,7 @@
             data_grid.RowHeadersWidth = 51;
             data_grid.RowTemplate.Height = 25;
             data_grid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            data_grid.Size = new Size(703, 320);
+            data_grid.Size = new Size(672, 320);
             data_grid.TabIndex = 15;
             // 
             // txt_duracion
@@ -238,7 +238,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1020, 101);
+            panel1.Size = new Size(993, 101);
             panel1.TabIndex = 28;
             panel1.Paint += panel1_Paint;
             // 
@@ -247,7 +247,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1020, 498);
+            ClientSize = new Size(993, 498);
             Controls.Add(label6);
             Controls.Add(panel_picture);
             Controls.Add(panel1);

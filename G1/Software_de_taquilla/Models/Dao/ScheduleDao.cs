@@ -40,5 +40,15 @@ namespace Software_de_taquilla.Models.Dao
             this.connection.Close();
         }
 
+        public void deleteSchedule(int id)
+        {
+            this.connection.Open();
+            string sql = "delete from horario where id='" + id + "'";
+            MySqlCommand cursor = new MySqlCommand(sql, this.connection);
+            cursor.ExecuteNonQuery();
+            this.connection.Close();
+        }
+
+
     }
 }

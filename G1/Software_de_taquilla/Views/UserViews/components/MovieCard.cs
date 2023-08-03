@@ -14,17 +14,16 @@ namespace Software_de_taquilla.Views.UserViews.components
 {
     public partial class MovieCard : UserControl
     {
-        public int h, m;
         public Movie mov;
-        public MovieCard(Movie movie, int h, int m)
+        public List<Object> objetos;
+        public MovieCard(List<Object> objetos, Movie movie)
         {
+            this.objetos = objetos;
             this.mov = movie;
-            this.h = h;
-            this.m = m;
             InitializeComponent();
-            label1.Text = movie.name;
-            picture.Image = Image.FromFile("./../../../images/" + movie.image);
-            int duracion = Convert.ToInt32(movie.duration);
+            label1.Text = mov.name;
+            picture.Image = Image.FromFile("./../../../images/" + mov.image);
+            int duracion = Convert.ToInt32(mov.duration);
             time_line.Value = duracion;
             label2.Text = duracion.ToString() + "min";
         }
@@ -50,7 +49,8 @@ namespace Software_de_taquilla.Views.UserViews.components
         private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
         {
             this.Visible = false;
-            MovieSelection mv = new MovieSelection(mov);
+            this.objetos.Add(this.mov);
+            MovieSelection mv = new MovieSelection(this.objetos);
             mv.ShowDialog();
             this.Visible = true;
 

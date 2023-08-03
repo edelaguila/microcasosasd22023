@@ -15,9 +15,11 @@ namespace Software_de_taquilla.Views.UserViews
     public partial class MovieSelection : Form
     {
         public Movie movie;
-        public MovieSelection(Movie mov)
+        public List<Object> objetos;
+        public MovieSelection(List<Object> objetos)
         {
-            this.movie = mov;
+            this.objetos = objetos;
+            this.movie = (Movie?)this.objetos[2];
             InitializeComponent();
             this.buildComponent();
         }
@@ -36,7 +38,7 @@ namespace Software_de_taquilla.Views.UserViews
         {
             Button btn = (Button)sender;
             string id = btn.Name.Replace("btN_", "");
-            SeleccionBoletos sb = new SeleccionBoletos(movie);
+            SeleccionBoletos sb = new SeleccionBoletos(this.objetos);
             this.Visible = false;
             sb.ShowDialog();
             this.Visible = true;

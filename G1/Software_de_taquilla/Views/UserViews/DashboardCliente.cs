@@ -45,7 +45,6 @@ namespace Software_de_taquilla.Views.UserViews
 
         private void label3_Click(object sender, EventArgs e)
         {
-            this.openForm(new Pagos());
         }
 
         private void btnCobros_Click(object sender, EventArgs e)
@@ -61,6 +60,11 @@ namespace Software_de_taquilla.Views.UserViews
         private void btnCartelera_Click(object sender, EventArgs e)
         {
             this.openForm(new Cartelera());
+        }
+
+        private void pic_exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

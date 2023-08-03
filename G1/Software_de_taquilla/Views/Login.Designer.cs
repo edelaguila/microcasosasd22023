@@ -36,6 +36,8 @@
             label2 = new Label();
             label1 = new Label();
             combo_role = new ComboBox();
+            label_reg = new Label();
+            label5 = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -54,7 +56,7 @@
             // 
             txt_pass.Font = new Font("Times New Roman", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             txt_pass.ForeColor = SystemColors.WindowFrame;
-            txt_pass.Location = new Point(539, 194);
+            txt_pass.Location = new Point(541, 181);
             txt_pass.Name = "txt_pass";
             txt_pass.PasswordChar = '*';
             txt_pass.PlaceholderText = "Contraseña";
@@ -64,11 +66,12 @@
             // btn_login
             // 
             btn_login.BackColor = Color.FromArgb(36, 171, 218);
+            btn_login.Cursor = Cursors.Hand;
             btn_login.FlatAppearance.BorderSize = 0;
             btn_login.FlatStyle = FlatStyle.Flat;
             btn_login.Font = new Font("Bookman Old Style", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             btn_login.ForeColor = Color.White;
-            btn_login.Location = new Point(539, 274);
+            btn_login.Location = new Point(539, 289);
             btn_login.Name = "btn_login";
             btn_login.Size = new Size(231, 25);
             btn_login.TabIndex = 2;
@@ -123,15 +126,40 @@
             // 
             // combo_role
             // 
+            combo_role.BackColor = SystemColors.InactiveCaption;
             combo_role.DropDownStyle = ComboBoxStyle.DropDownList;
-            combo_role.FlatStyle = FlatStyle.Popup;
-            combo_role.ForeColor = SystemColors.GrayText;
+            combo_role.FlatStyle = FlatStyle.Flat;
+            combo_role.ForeColor = Color.Black;
             combo_role.FormattingEnabled = true;
             combo_role.Items.AddRange(new object[] { "Administrador", "Empleado", "Cliente" });
-            combo_role.Location = new Point(660, 230);
+            combo_role.Location = new Point(660, 241);
             combo_role.Name = "combo_role";
             combo_role.Size = new Size(108, 23);
             combo_role.TabIndex = 5;
+            // 
+            // label_reg
+            // 
+            label_reg.AutoSize = true;
+            label_reg.Cursor = Cursors.Hand;
+            label_reg.FlatStyle = FlatStyle.Flat;
+            label_reg.ForeColor = Color.FromArgb(33, 103, 206);
+            label_reg.Location = new Point(708, 327);
+            label_reg.Name = "label_reg";
+            label_reg.Size = new Size(64, 15);
+            label_reg.TabIndex = 6;
+            label_reg.Text = "Registrarse";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Cursor = Cursors.Hand;
+            label5.FlatStyle = FlatStyle.Flat;
+            label5.ForeColor = Color.FromArgb(33, 103, 206);
+            label5.Location = new Point(746, 223);
+            label5.Name = "label5";
+            label5.Size = new Size(24, 15);
+            label5.TabIndex = 8;
+            label5.Text = "Rol";
             // 
             // Login
             // 
@@ -139,6 +167,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(864, 376);
+            Controls.Add(label5);
+            Controls.Add(label_reg);
             Controls.Add(combo_role);
             Controls.Add(label1);
             Controls.Add(panel1);
@@ -148,7 +178,6 @@
             Name = "Login";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
-            Load += Login_Load_1;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
@@ -164,5 +193,7 @@
         public TextBox txt_user;
         public TextBox txt_pass;
         public ComboBox combo_role;
+        public Label label_reg;
+        public Label label5;
     }
 }

@@ -22,8 +22,9 @@ namespace Software_de_taquilla.Models.Dao
             {
                 int id = reader.GetInt32(0);
                 int n = reader.GetInt32(1);
-                Asiento city = new Asiento(id, n);
-                asientos.Add(city);
+                int e = reader.GetInt32(2);
+                Asiento asiento = new Asiento(id, n, e);
+                asientos.Add(asiento);
             }
             this.connection.Close();
             return asientos;
@@ -33,7 +34,7 @@ namespace Software_de_taquilla.Models.Dao
         public void updateAsiento(int id, int state)
         {
             this.connection.Open();
-            string sql = "update from asiento set estado='" + state + "' where numero='" + id + "'";
+            string sql = "update asiento set estado=" + state + " where numero=" + id + ";";
             MySqlCommand cursor = new MySqlCommand(sql, this.connection);
             cursor.ExecuteNonQuery();
             this.connection.Close();

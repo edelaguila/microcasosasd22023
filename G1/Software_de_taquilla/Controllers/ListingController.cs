@@ -13,6 +13,7 @@ namespace Software_de_taquilla.Controllers
     public class ListingController
     {
         public ListingView view;
+        public List<Object> objects = new List<Object>();
         public ListingController(ListingView view)
         {
             this.view = view;
@@ -33,12 +34,10 @@ namespace Software_de_taquilla.Controllers
             List<Movie> movies = new List<Movie>();
             if (n == -1) movies = mydao.getMovies();
             else movies = mydao.getMovies(n, j);
-            var date = DateTime.Now;
-            int h = date.Hour;
-            int m = date.Minute;
+            this.objects.Add(this.view.combo_cine.SelectedIndex + 1);
             foreach (Movie movie in movies)
             {
-                this.view.flow_container.Controls.Add(new MovieCard(movie, h, m));
+                this.view.flow_container.Controls.Add(new MovieCard(this.objects, movie));
             }
         }
 

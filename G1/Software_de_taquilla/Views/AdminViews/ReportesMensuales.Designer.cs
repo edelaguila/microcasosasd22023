@@ -28,149 +28,119 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btn_IngresoM = new System.Windows.Forms.Button();
-            this.btn_IngresoS = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
-            this.SuspendLayout();
+            label1 = new Label();
+            panel1 = new Panel();
+            combo_mes = new ComboBox();
+            combo_filtro = new ComboBox();
+            data_grid = new DataGridView();
+            label3 = new Label();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)data_grid).BeginInit();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bookman Old Style", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(62)))), ((int)(((byte)(85)))));
-            this.label1.Location = new System.Drawing.Point(32, 48);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(355, 40);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Reportes Mensuales";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(62)))), ((int)(((byte)(85)))));
-            this.label2.Location = new System.Drawing.Point(408, 81);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(209, 24);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Ingresos Mensuales";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Location = new System.Drawing.Point(352, 108);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(319, 27);
-            this.textBox1.TabIndex = 4;
+            label1.Anchor = AnchorStyles.None;
+            label1.AutoSize = true;
+            label1.Font = new Font("Bookman Old Style", 19.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.FromArgb(12, 62, 85);
+            label1.Location = new Point(28, 36);
+            label1.Name = "label1";
+            label1.Size = new Size(292, 32);
+            label1.TabIndex = 2;
+            label1.Text = "Reportes Mensuales";
             // 
             // panel1
             // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(71, 153);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(685, 367);
-            this.panel1.TabIndex = 5;
+            panel1.Anchor = AnchorStyles.None;
+            panel1.Controls.Add(combo_mes);
+            panel1.Controls.Add(combo_filtro);
+            panel1.Controls.Add(data_grid);
+            panel1.Controls.Add(label3);
+            panel1.Location = new Point(12, 70);
+            panel1.Margin = new Padding(3, 2, 3, 2);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(807, 369);
+            panel1.TabIndex = 5;
             // 
-            // comboBox1
+            // combo_mes
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(515, 7);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(151, 28);
-            this.comboBox1.TabIndex = 0;
+            combo_mes.DropDownStyle = ComboBoxStyle.DropDownList;
+            combo_mes.FlatStyle = FlatStyle.System;
+            combo_mes.FormattingEnabled = true;
+            combo_mes.Items.AddRange(new object[] { "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" });
+            combo_mes.Location = new Point(521, 10);
+            combo_mes.Margin = new Padding(3, 2, 3, 2);
+            combo_mes.Name = "combo_mes";
+            combo_mes.Size = new Size(133, 23);
+            combo_mes.TabIndex = 6;
             // 
-            // panel2
+            // combo_filtro
             // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 41);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(685, 326);
-            this.panel2.TabIndex = 1;
+            combo_filtro.DropDownStyle = ComboBoxStyle.DropDownList;
+            combo_filtro.FlatStyle = FlatStyle.System;
+            combo_filtro.FormattingEnabled = true;
+            combo_filtro.Items.AddRange(new object[] { "Semana 1", "Semana 2", "Semana 3", "Semana 4" });
+            combo_filtro.Location = new Point(671, 10);
+            combo_filtro.Margin = new Padding(3, 2, 3, 2);
+            combo_filtro.Name = "combo_filtro";
+            combo_filtro.Size = new Size(133, 23);
+            combo_filtro.TabIndex = 0;
+            combo_filtro.SelectedIndexChanged += combo_filtro_SelectedIndexChanged;
+            // 
+            // data_grid
+            // 
+            data_grid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            data_grid.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            data_grid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            data_grid.Dock = DockStyle.Bottom;
+            data_grid.Location = new Point(0, 46);
+            data_grid.Name = "data_grid";
+            data_grid.RowHeadersVisible = false;
+            data_grid.RowHeadersWidth = 51;
+            data_grid.RowTemplate.Height = 25;
+            data_grid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            data_grid.Size = new Size(807, 323);
+            data_grid.TabIndex = 5;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(62)))), ((int)(((byte)(85)))));
-            this.label3.Location = new System.Drawing.Point(22, 14);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(336, 24);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Peliculas Taquilleras Mensuales";
-            // 
-            // btn_IngresoM
-            // 
-            this.btn_IngresoM.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_IngresoM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(209)))), ((int)(((byte)(212)))));
-            this.btn_IngresoM.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_IngresoM.Location = new System.Drawing.Point(772, 341);
-            this.btn_IngresoM.Name = "btn_IngresoM";
-            this.btn_IngresoM.Size = new System.Drawing.Size(158, 53);
-            this.btn_IngresoM.TabIndex = 7;
-            this.btn_IngresoM.Text = "Puntos Clientes";
-            this.btn_IngresoM.UseVisualStyleBackColor = false;
-            this.btn_IngresoM.Click += new System.EventHandler(this.btn_IngresoM_Click);
-            // 
-            // btn_IngresoS
-            // 
-            this.btn_IngresoS.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_IngresoS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(209)))), ((int)(((byte)(212)))));
-            this.btn_IngresoS.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_IngresoS.Location = new System.Drawing.Point(771, 244);
-            this.btn_IngresoS.Name = "btn_IngresoS";
-            this.btn_IngresoS.Size = new System.Drawing.Size(159, 53);
-            this.btn_IngresoS.TabIndex = 6;
-            this.btn_IngresoS.Text = "Ingresos Semanales";
-            this.btn_IngresoS.UseVisualStyleBackColor = false;
-            this.btn_IngresoS.Click += new System.EventHandler(this.btn_IngresoS_Click);
+            label3.AutoSize = true;
+            label3.Font = new Font("Bookman Old Style", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.FromArgb(12, 62, 85);
+            label3.Location = new Point(19, 10);
+            label3.Name = "label3";
+            label3.Size = new Size(270, 19);
+            label3.TabIndex = 4;
+            label3.Text = "Peliculas Taquilleras Mensuales";
             // 
             // ReportesMensuales
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(932, 553);
-            this.Controls.Add(this.btn_IngresoM);
-            this.Controls.Add(this.btn_IngresoS);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MinimumSize = new System.Drawing.Size(950, 600);
-            this.Name = "ReportesMensuales";
-            this.Text = "ReportesMensuales";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            ClientSize = new Size(831, 450);
+            Controls.Add(panel1);
+            Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
+            MinimumSize = new Size(831, 450);
+            Name = "ReportesMensuales";
+            Text = "ReportesMensuales";
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)data_grid).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Label label1;
-        private Label label2;
-        private TextBox textBox1;
         private Panel panel1;
-        private Panel panel2;
         private Label label3;
-        private ComboBox comboBox1;
-        private Button btn_IngresoM;
-        private Button btn_IngresoS;
+        private ComboBox combo_filtro;
+        public DataGridView data_grid;
+        private ComboBox combo_mes;
     }
 }
