@@ -382,14 +382,60 @@ public class reg_paciente extends javax.swing.JPanel {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // Activará las funciones respectivas para MODIFICAR información en la base de datos
-        
+          nombre_pa = txt_nombre.getText();
+        sexo_pa = comb_sexo.getSelectedItem().toString();
+        telefono_pa = txt_telefono.getText();
+        nit_pa = txt_nit.getText();
+        direccion_pa = txt_direccion.getText();
+        quienref_pa = txt_quienref.getText();
+        cod_aux_pa = txt_codaux.getText();
+        tipo_muestra_pa = comb_tipomuestra.getSelectedItem().toString();
+        fecha_nacimiento_pa = txt_nacimiento.getText();
+
+        // Obtener el id_expediente ingresado en txt_buscar
+        id_expediente_str = txt_buscar.getText();
+        if (!id_expediente_str.isEmpty()) {
+        try {
+            id_expediente = Integer.parseInt(id_expediente_str);
+            int filasAfectadas = GP.updateDatos(nombre_pa, sexo_pa, telefono_pa, nit_pa, direccion_pa, quienref_pa, tipo_muestra_pa, cod_aux_pa, fecha_nacimiento_pa, id_expediente);
+            if (filasAfectadas > 0) {
+                // Éxito al modificar el registro
+                JOptionPane.showMessageDialog(null, "Registro Modificado");
+            } else {
+                // No se encontró el registro con el id_expediente especificado
+                JOptionPane.showMessageDialog(null, "No se encontró el registro con el ID especificado");
+            }
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(null, "Ingrese un valor de ID válido");
+        }
+        } else {
+            JOptionPane.showMessageDialog(null, "Ingrese un valor de ID para modificar el registro");
+        }
         //INSTRUCCION
         
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // Activará las funciones respectivas para ELIMINAR información en la base de datos
-        
+         String id_expediente_str = txt_buscar.getText();
+        if (!id_expediente_str.isEmpty()) {
+        try {
+            id_expediente = Integer.parseInt(id_expediente_str);
+            filasAfectadas = GP.deleteDatos(id_expediente);
+            if (filasAfectadas > 0) {
+                // Éxito al eliminar el registro
+                JOptionPane.showMessageDialog(null, "Registro Eliminado");
+            } else {
+                // No se encontró el registro con el id_expediente especificado
+                JOptionPane.showMessageDialog(null, "No se encontró el registro con el ID especificado");
+            }
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(null, "Ingrese un valor de ID válido");
+        }
+        } else {
+            JOptionPane.showMessageDialog(null, "Ingrese un valor de ID para eliminar el registro");
+        }
+
         //INSTRUCCION
         
     }//GEN-LAST:event_jButton4ActionPerformed
