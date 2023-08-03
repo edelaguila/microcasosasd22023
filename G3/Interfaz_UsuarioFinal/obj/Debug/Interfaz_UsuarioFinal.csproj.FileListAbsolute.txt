@@ -25,3 +25,8 @@ D:\Escritorio\Analsis de Sistemas II\Proyecto Polideportivo\microcasosasd22023\G
 D:\Escritorio\Analsis de Sistemas II\Proyecto Polideportivo\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.Estadisticas.resources
 D:\Escritorio\Analsis de Sistemas II\Proyecto Polideportivo\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.Tablas.resources
 D:\Escritorio\Analsis de Sistemas II\Proyecto Polideportivo\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.Tableros.resources
+D:\8VO_SEMESTRE\ANALISIS_II\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.csproj.AssemblyReference.cache
+D:\8VO_SEMESTRE\ANALISIS_II\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.Equipos.resources
+D:\8VO_SEMESTRE\ANALISIS_II\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.Estadisticas.resources
+D:\8VO_SEMESTRE\ANALISIS_II\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.Tablas.resources
+D:\8VO_SEMESTRE\ANALISIS_II\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.Tableros.resources
