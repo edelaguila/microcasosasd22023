@@ -1,5 +1,6 @@
 package clases;
 
+import interfaces.Login;
 import interfaces.lobby;
 import javax.swing.JFrame;
 
@@ -9,5 +10,9 @@ public class Main {
 
         lobbyFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         lobbyFrame.setVisible(true);
+        /*Login lobbyFrame = new Login();
+
+        lobbyFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        lobbyFrame.setVisible(true);*/
     }
 }

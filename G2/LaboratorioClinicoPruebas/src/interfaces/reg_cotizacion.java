@@ -5,15 +5,20 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
+
 
 public class reg_cotizacion extends javax.swing.JPanel {
 
     public reg_cotizacion() {
         initComponents();
         
+
+
         //Activará la secuencia del botÓn de BUSQUEDA de LABORATORIOS
         btnBuscar.addActionListener((ActionEvent evt) -> {
             try {
@@ -30,9 +35,31 @@ public class reg_cotizacion extends javax.swing.JPanel {
         }
     });
     }
+//<<<<<<< HEAD
+// inicializacion de variables
+    public static String nombrelab = "";
+    public static String nit ="";
+    public static String telefono = "";
+    public static String nombrepa = "";
+    public static String direccion ="";
+    public static String referencia  = "";
+    public static String pago ="";
+    public static String cargo = "";
+    public static String descuento ="";
+    public static String fecha="";
+//=======
 
 
+//>>>>>>> e2b73c6eb311c862119b171d09955c4fd2bb3bac
     private operaciones GP = new operaciones();
+// inicializacion de variables
+    
+    
+    public static String fechaActual(){
+    Date fecha = new Date();
+    SimpleDateFormat formatoFecha = new SimpleDateFormat("dd/MM/YYYY");
+    return formatoFecha.format(fecha);
+    }
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -43,16 +70,13 @@ public class reg_cotizacion extends javax.swing.JPanel {
         jLabel9 = new javax.swing.JLabel();
         buscar_nolab = new javax.swing.JTextField();
         txt_nombrelab = new javax.swing.JTextField();
-        jLabel10 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
         jTextField11 = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
         jTextField10 = new javax.swing.JTextField();
         jLabel13 = new javax.swing.JLabel();
         btnBuscar = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        btnImprEnv = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         txt_cotizanit = new javax.swing.JTextField();
@@ -85,12 +109,6 @@ public class reg_cotizacion extends javax.swing.JPanel {
         txt_nombrelab.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txt_nombrelab.setText("NOMBRE DE MI LABORATORIO");
 
-        jLabel10.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel10.setText("Fecha:");
-
-        jTextField6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jTextField6.setText("00-00-0000");
-
         jLabel11.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel11.setText("Número de Cotización:");
 
@@ -115,11 +133,13 @@ public class reg_cotizacion extends javax.swing.JPanel {
             }
         });
 
-        jButton3.setBackground(new java.awt.Color(204, 204, 204));
-        jButton3.setText("IMPRESIÓN");
-
-        jButton4.setBackground(new java.awt.Color(204, 204, 204));
-        jButton4.setText("ENVÍO");
+        btnImprEnv.setBackground(new java.awt.Color(204, 204, 204));
+        btnImprEnv.setText("IMPRESION/ENVIO");
+        btnImprEnv.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnImprEnvActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -133,23 +153,18 @@ public class reg_cotizacion extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextField11))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(7, 7, 7)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel9)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(buscar_nolab, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(10, 10, 10)
+                                .addComponent(jLabel9))
+                            .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel10)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel12)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(txt_nombrelab))))
+                                .addComponent(buscar_nolab, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(txt_nombrelab, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(448, 448, 448)
@@ -159,10 +174,8 @@ public class reg_cotizacion extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(33, 33, 33)
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(30, 30, 30)
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(36, 36, 36))))
+                        .addComponent(btnImprEnv)
+                        .addGap(153, 153, 153))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -176,13 +189,10 @@ public class reg_cotizacion extends javax.swing.JPanel {
                             .addComponent(txt_nombrelab, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel12)
                             .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel10))
+                            .addComponent(btnImprEnv, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -228,7 +238,7 @@ public class reg_cotizacion extends javax.swing.JPanel {
         jLabel18.setText("Tipo de Precio:");
 
         jComboBox1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "TARJETA", "EFECTIVO", "CHEQUE", "SEGURO" }));
 
         jTextField7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jTextField7.setText("0.00");
@@ -326,7 +336,7 @@ public class reg_cotizacion extends javax.swing.JPanel {
                     .addComponent(jLabel18)
                     .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(16, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btncliente_buscar, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -350,7 +360,7 @@ public class reg_cotizacion extends javax.swing.JPanel {
                 .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -416,6 +426,21 @@ public class reg_cotizacion extends javax.swing.JPanel {
     }
     }//GEN-LAST:event_btncliente_buscarActionPerformed
 
+    private void btnImprEnvActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnImprEnvActionPerformed
+        nombrelab = txt_nombrelab.getText();
+        nit = txt_cotizanit.getText();
+        telefono = txt_cotizatel.getText();
+        nombrepa = txt_cotizanombre.getText();
+        direccion = txt_cotizadireccion.getText();
+        referencia  = txt_cotizareff.getText();
+        pago = jComboBox1.getSelectedItem().toString();
+        cargo = jTextField10.getText();
+        descuento = jTextField7.getText();
+        fecha = fechaActual();
+        interfazimprimir imprimir = new interfazimprimir();
+        imprimir.setVisible(true);  
+    }//GEN-LAST:event_btnImprEnvActionPerformed
+
     //INSTRUCCION
     private void buscarLaboratorio() throws SQLException {
         // Obtener el número de laboratorio a buscar del JTextField "buscar_nolab"
@@ -449,12 +474,10 @@ public class reg_cotizacion extends javax.swing.JPanel {
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBuscar;
+    private javax.swing.JButton btnImprEnv;
     private javax.swing.JButton btncliente_buscar;
     private javax.swing.JTextField buscar_nolab;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
@@ -472,7 +495,6 @@ public class reg_cotizacion extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField txt_cotizadireccion;
     private javax.swing.JTextField txt_cotizanit;

@@ -382,14 +382,60 @@ public class reg_paciente extends javax.swing.JPanel {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // Activará las funciones respectivas para MODIFICAR información en la base de datos
-        
+          nombre_pa = txt_nombre.getText();
+        sexo_pa = comb_sexo.getSelectedItem().toString();
+        telefono_pa = txt_telefono.getText();
+        nit_pa = txt_nit.getText();
+        direccion_pa = txt_direccion.getText();
+        quienref_pa = txt_quienref.getText();
+        cod_aux_pa = txt_codaux.getText();
+        tipo_muestra_pa = comb_tipomuestra.getSelectedItem().toString();
+        fecha_nacimiento_pa = txt_nacimiento.getText();
+
+        // Obtener el id_expediente ingresado en txt_buscar
+        id_expediente_str = txt_buscar.getText();
+        if (!id_expediente_str.isEmpty()) {
+        try {
+            id_expediente = Integer.parseInt(id_expediente_str);
+            int filasAfectadas = GP.updateDatos(nombre_pa, sexo_pa, telefono_pa, nit_pa, direccion_pa, quienref_pa, tipo_muestra_pa, cod_aux_pa, fecha_nacimiento_pa, id_expediente);
+            if (filasAfectadas > 0) {
+                // Éxito al modificar el registro
+                JOptionPane.showMessageDialog(null, "Registro Modificado");
+            } else {
+                // No se encontró el registro con el id_expediente especificado
+                JOptionPane.showMessageDialog(null, "No se encontró el registro con el ID especificado");
+            }
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(null, "Ingrese un valor de ID válido");
+        }
+        } else {
+            JOptionPane.showMessageDialog(null, "Ingrese un valor de ID para modificar el registro");
+        }
         //INSTRUCCION
         
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // Activará las funciones respectivas para ELIMINAR información en la base de datos
-        
+         String id_expediente_str = txt_buscar.getText();
+        if (!id_expediente_str.isEmpty()) {
+        try {
+            id_expediente = Integer.parseInt(id_expediente_str);
+            filasAfectadas = GP.deleteDatos(id_expediente);
+            if (filasAfectadas > 0) {
+                // Éxito al eliminar el registro
+                JOptionPane.showMessageDialog(null, "Registro Eliminado");
+            } else {
+                // No se encontró el registro con el id_expediente especificado
+                JOptionPane.showMessageDialog(null, "No se encontró el registro con el ID especificado");
+            }
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(null, "Ingrese un valor de ID válido");
+        }
+        } else {
+            JOptionPane.showMessageDialog(null, "Ingrese un valor de ID para eliminar el registro");
+        }
+
         //INSTRUCCION
         
     }//GEN-LAST:event_jButton4ActionPerformed
@@ -398,25 +444,155 @@ public class reg_paciente extends javax.swing.JPanel {
         // Activará las funciones respectivas para BUSCAR información en la base de datos
         
         //INSTRUCCION
-        
+        String numeroExpedienteStr = txt_buscar.getText();
+        if (!numeroExpedienteStr.isEmpty()) {
+        try {
+        id_expediente = Integer.parseInt(numeroExpedienteStr);
+        ResultSet rs = GP.selectDatos(id_expediente);
+        if (rs.next()) {
+            // El registro con el número de expediente especificado se encontró en la base de datos
+            nombre_pa = rs.getString("nombre_ex");
+            sexo_pa = rs.getString("genero_ex");
+            telefono_pa = rs.getString("telefono_ex");
+            nit_pa = rs.getString("nit_ex");
+            direccion_pa = rs.getString("direccion_ex");
+            quienref_pa = rs.getString("quien_refiere");
+            cod_aux_pa = rs.getString("codigo_auxiliar");
+            tipo_muestra_pa = rs.getString("tipo_muestra");
+            fecha_nacimiento_pa = rs.getString("fecha_nacimiento");
+
+            // Mostrar los datos en los campos de texto
+            txt_nombre.setText(nombre_pa);
+            comb_sexo.setSelectedItem(sexo_pa);
+            txt_telefono.setText(telefono_pa);
+            txt_nit.setText(nit_pa);
+            txt_direccion.setText(direccion_pa);
+            txt_quienref.setText(quienref_pa);
+            txt_codaux.setText(cod_aux_pa);
+            comb_tipomuestra.setSelectedItem(tipo_muestra_pa);
+            txt_nacimiento.setText(fecha_nacimiento_pa);
+
+            JOptionPane.showMessageDialog(null, "Registro encontrado");
+        } else {
+            // No se encontró el registro con el número de expediente especificado
+            JOptionPane.showMessageDialog(null, "No se encontró el registro con el número de expediente especificado");
+        }
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(null, "Error al buscar el registro: " + ex);
+    }       catch (SQLException ex) {
+                Logger.getLogger(reg_paciente.class.getName()).log(Level.SEVERE, null, ex);
+            }
+    } else {
+        JOptionPane.showMessageDialog(null, "Ingrese un número de expediente para buscar el registro");
+    }
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        // Activará las funciones respectivas para ANTERIOR información en la base de datos
+        //boton anterior
         
+// Activará las funciones respectivas para ANTERIOR información en la base de datos
+        String numeroExpedienteStr = txt_buscar.getText();
+    if (!numeroExpedienteStr.isEmpty()) {
+        try {
+            int numeroExpedienteActual = Integer.parseInt(numeroExpedienteStr);
+            int numeroExpedienteAnterior = numeroExpedienteActual - 1;
+            ResultSet rs = GP.selectDatos(numeroExpedienteAnterior);
+            if (rs.next()) {
+                // Se encontró el registro anterior en la base de datos
+                mostrarDatos(rs);
+            } else {
+                // No se encontró el registro anterior, puede ser el primer registro
+                JOptionPane.showMessageDialog(null, "No se encontró el registro anterior");
+            }
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(null, "Ingrese un valor de número de expediente válido");
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, "Error al buscar el registro: " + ex);
+        }
+    } else {
+        // Si no hay número de expediente en el campo de texto, mostrar el último registro
+        try {
+            ResultSet rs = GP.selectDatos(-1); // Aquí enviamos el valor -1 para obtener el último registro
+            if (rs.last()) {
+                mostrarDatos(rs);
+            } else {
+                // No se encontraron registros en la base de datos
+                JOptionPane.showMessageDialog(null, "No se encontraron registros en la base de datos");
+            }
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, "Error al buscar el registro: " + ex);
+        }
+    }
         //INSTRUCCION
+        
         
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // Activará las funciones respectivas para SIGUIENTE información en la base de datos
-        
+        //Boton Siguiente
+        String numeroExpedienteStr = txt_buscar.getText();
+    if (!numeroExpedienteStr.isEmpty()) {
+        try {
+            int numeroExpedienteActual = Integer.parseInt(numeroExpedienteStr);
+            int numeroExpedienteSiguiente = numeroExpedienteActual + 1;
+            ResultSet rs = GP.selectDatos(numeroExpedienteSiguiente);
+            if (rs.next()) {
+                // Se encontró el registro siguiente en la base de datos
+                mostrarDatos(rs);
+            } else {
+                // No se encontró el registro siguiente, puede ser el último registro
+                JOptionPane.showMessageDialog(null, "No se encontró el registro siguiente");
+            }
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(null, "Ingrese un valor de número de expediente válido");
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, "Error al buscar el registro: " + ex);
+        }
+    } else {
+        // Si no hay número de expediente en el campo de texto, mostrar el primer registro
+        try {
+            ResultSet rs = GP.selectDatos(1); // Aquí enviamos el valor 1 para obtener el primer registro
+            if (rs.next()) {
+                mostrarDatos(rs);
+            } else {
+                // No se encontraron registros en la base de datos
+                JOptionPane.showMessageDialog(null, "No se encontraron registros en la base de datos");
+            }
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, "Error al buscar el registro: " + ex);
+        }
+    }
         //INSTRUCCION
         
     }//GEN-LAST:event_jButton5ActionPerformed
 
     //INSTRUCCION
+    private void mostrarDatos(ResultSet rs) throws SQLException {
+        nombre_pa = rs.getString("nombre_ex");
+        sexo_pa = rs.getString("genero_ex");
+        telefono_pa = rs.getString("telefono_ex");
+        nit_pa = rs.getString("nit_ex");
+        direccion_pa = rs.getString("direccion_ex");
+        quienref_pa = rs.getString("quien_refiere");
+        cod_aux_pa = rs.getString("codigo_auxiliar");
+        tipo_muestra_pa = rs.getString("tipo_muestra");
+        fecha_nacimiento_pa = rs.getString("fecha_nacimiento");
 
+        // Mostrar los datos en los campos de texto
+        txt_nombre.setText(nombre_pa);
+        comb_sexo.setSelectedItem(sexo_pa);
+        txt_telefono.setText(telefono_pa);
+        txt_nit.setText(nit_pa);
+        txt_direccion.setText(direccion_pa);
+        txt_quienref.setText(quienref_pa);
+        txt_codaux.setText(cod_aux_pa);
+        comb_tipomuestra.setSelectedItem(tipo_muestra_pa);
+        txt_nacimiento.setText(fecha_nacimiento_pa);
+
+        JOptionPane.showMessageDialog(null, "Registro encontrado");
+    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> comb_sexo;
     private javax.swing.JComboBox<String> comb_tipomuestra;
