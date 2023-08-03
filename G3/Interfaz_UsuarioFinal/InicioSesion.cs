@@ -22,6 +22,17 @@ namespace Interfaz_UsuarioFinal
             Menu_Principal menu = new Menu_Principal();
             menu.Show();
             this.Hide();
+
+            DatabaseConnection dbConnection = DatabaseConnection.Instance;
+
+            if (dbConnection.TestConnection())
+            {
+                MessageBox.Show("Conexión exitosa a la base de datos.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Error al conectar a la base de datos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)

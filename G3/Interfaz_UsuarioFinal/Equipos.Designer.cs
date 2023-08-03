@@ -52,7 +52,11 @@ namespace Interfaz_UsuarioFinal
             this.Lsv_Equipos.Location = new System.Drawing.Point(79, 110);
             this.Lsv_Equipos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Lsv_Equipos.Name = "Lsv_Equipos";
+<<<<<<< HEAD
+            this.Lsv_Equipos.Size = new System.Drawing.Size(126, 196);
+=======
             this.Lsv_Equipos.Size = new System.Drawing.Size(147, 250);
+>>>>>>> a224d58c8ba67c0c1efbce949971028d3e1bbbaf
             this.Lsv_Equipos.TabIndex = 1;
             this.Lsv_Equipos.UseCompatibleStateImageBehavior = false;
             // 

@@ -65,6 +65,7 @@ namespace Interfaz_UsuarioFinal
             this.Btn_MostrarTablero.TabIndex = 2;
             this.Btn_MostrarTablero.Text = "Mostrar";
             this.Btn_MostrarTablero.UseVisualStyleBackColor = true;
+            this.Btn_MostrarTablero.Click += new System.EventHandler(this.Btn_MostrarTablero_Click);
             // 
             // Tableros
             // 

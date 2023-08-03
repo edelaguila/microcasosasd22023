@@ -16,5 +16,10 @@ namespace Interfaz_UsuarioFinal
         {
             InitializeComponent();
         }
+
+        private void Btn_MostrarTablero_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
