@@ -54,6 +54,7 @@ namespace Interface_Admin
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(226, 22);
             this.textBox1.TabIndex = 2;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -92,7 +93,7 @@ namespace Interface_Admin
             this.button3.Text = "Borrar";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // campeonatos
+            // entrenadores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -105,7 +106,7 @@ namespace Interface_Admin
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "campeonatos";
+            this.Name = "entrenadores";
             this.Text = "campeonatos";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
