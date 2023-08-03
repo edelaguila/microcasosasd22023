@@ -40,49 +40,60 @@ namespace Interfaz_UsuarioFinal
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(64, 54);
+            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(85, 66);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 13);
+            this.label1.Size = new System.Drawing.Size(130, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Escribe tu Usuario:";
             // 
             // TxbUsuario
             // 
-            this.TxbUsuario.Location = new System.Drawing.Point(179, 51);
+            this.TxbUsuario.Location = new System.Drawing.Point(259, 63);
+            this.TxbUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TxbUsuario.Name = "TxbUsuario";
-            this.TxbUsuario.Size = new System.Drawing.Size(259, 20);
+            this.TxbUsuario.Size = new System.Drawing.Size(324, 22);
             this.TxbUsuario.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(64, 94);
+            this.label2.Font = new System.Drawing.Font("Trebuchet MS", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(85, 116);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(113, 13);
+            this.label2.Size = new System.Drawing.Size(153, 18);
             this.label2.TabIndex = 2;
             this.label2.Text = "Escribe tu contraseña:";
             // 
             // TxbContraseña
             // 
-            this.TxbContraseña.Location = new System.Drawing.Point(179, 91);
+            this.TxbContraseña.Location = new System.Drawing.Point(259, 112);
+            this.TxbContraseña.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TxbContraseña.Name = "TxbContraseña";
-            this.TxbContraseña.Size = new System.Drawing.Size(259, 20);
+            this.TxbContraseña.Size = new System.Drawing.Size(324, 22);
             this.TxbContraseña.TabIndex = 3;
             // 
             // BtnGuardar
             // 
-            this.BtnGuardar.Location = new System.Drawing.Point(256, 134);
+            this.BtnGuardar.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnGuardar.Location = new System.Drawing.Point(341, 165);
+            this.BtnGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnGuardar.Name = "BtnGuardar";
-            this.BtnGuardar.Size = new System.Drawing.Size(75, 23);
+            this.BtnGuardar.Size = new System.Drawing.Size(100, 28);
             this.BtnGuardar.TabIndex = 4;
             this.BtnGuardar.Text = "Registrar";
             this.BtnGuardar.UseVisualStyleBackColor = true;
             // 
             // BtnExit
             // 
-            this.BtnExit.Location = new System.Drawing.Point(473, 12);
+            this.BtnExit.Location = new System.Drawing.Point(631, 15);
+            this.BtnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnExit.Name = "BtnExit";
-            this.BtnExit.Size = new System.Drawing.Size(75, 23);
+            this.BtnExit.Size = new System.Drawing.Size(100, 28);
             this.BtnExit.TabIndex = 5;
             this.BtnExit.Text = "X";
             this.BtnExit.UseVisualStyleBackColor = true;
@@ -90,9 +101,10 @@ namespace Interfaz_UsuarioFinal
             // 
             // Registro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(560, 210);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.ClientSize = new System.Drawing.Size(747, 258);
             this.Controls.Add(this.BtnExit);
             this.Controls.Add(this.BtnGuardar);
             this.Controls.Add(this.TxbContraseña);
@@ -100,6 +112,7 @@ namespace Interfaz_UsuarioFinal
             this.Controls.Add(this.TxbUsuario);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Registro";
             this.Text = "Registro";
             this.ResumeLayout(false);

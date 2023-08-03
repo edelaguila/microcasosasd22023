@@ -37,39 +37,46 @@ namespace Interfaz_UsuarioFinal
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(47, 68);
+            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(76, 84);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 13);
+            this.label1.Size = new System.Drawing.Size(102, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Estadisticas";
             // 
             // Lsv_Estadistica
             // 
             this.Lsv_Estadistica.HideSelection = false;
-            this.Lsv_Estadistica.Location = new System.Drawing.Point(50, 84);
+            this.Lsv_Estadistica.Location = new System.Drawing.Point(79, 110);
+            this.Lsv_Estadistica.Margin = new System.Windows.Forms.Padding(4);
             this.Lsv_Estadistica.Name = "Lsv_Estadistica";
-            this.Lsv_Estadistica.Size = new System.Drawing.Size(111, 204);
+            this.Lsv_Estadistica.Size = new System.Drawing.Size(147, 250);
             this.Lsv_Estadistica.TabIndex = 1;
             this.Lsv_Estadistica.UseCompatibleStateImageBehavior = false;
             // 
             // Btn_MostrarEstad
             // 
-            this.Btn_MostrarEstad.Location = new System.Drawing.Point(50, 294);
+            this.Btn_MostrarEstad.Location = new System.Drawing.Point(79, 368);
+            this.Btn_MostrarEstad.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_MostrarEstad.Name = "Btn_MostrarEstad";
-            this.Btn_MostrarEstad.Size = new System.Drawing.Size(81, 32);
+            this.Btn_MostrarEstad.Size = new System.Drawing.Size(95, 32);
             this.Btn_MostrarEstad.TabIndex = 2;
             this.Btn_MostrarEstad.Text = "Mostrar";
             this.Btn_MostrarEstad.UseVisualStyleBackColor = true;
             // 
             // Estadisticas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.Btn_MostrarEstad);
             this.Controls.Add(this.Lsv_Estadistica);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Estadisticas";
             this.Text = "Estadisticas";
             this.ResumeLayout(false);

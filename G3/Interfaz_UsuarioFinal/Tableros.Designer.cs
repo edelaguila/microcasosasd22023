@@ -37,39 +37,46 @@ namespace Interfaz_UsuarioFinal
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(45, 66);
+            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(76, 84);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.Size = new System.Drawing.Size(69, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tablero";
             // 
             // Lsv_Tableros
             // 
             this.Lsv_Tableros.HideSelection = false;
-            this.Lsv_Tableros.Location = new System.Drawing.Point(48, 82);
+            this.Lsv_Tableros.Location = new System.Drawing.Point(79, 110);
+            this.Lsv_Tableros.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Lsv_Tableros.Name = "Lsv_Tableros";
-            this.Lsv_Tableros.Size = new System.Drawing.Size(118, 215);
+            this.Lsv_Tableros.Size = new System.Drawing.Size(147, 250);
             this.Lsv_Tableros.TabIndex = 1;
             this.Lsv_Tableros.UseCompatibleStateImageBehavior = false;
             // 
             // Btn_MostrarTablero
             // 
-            this.Btn_MostrarTablero.Location = new System.Drawing.Point(48, 303);
+            this.Btn_MostrarTablero.Location = new System.Drawing.Point(79, 368);
+            this.Btn_MostrarTablero.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Btn_MostrarTablero.Name = "Btn_MostrarTablero";
-            this.Btn_MostrarTablero.Size = new System.Drawing.Size(80, 27);
+            this.Btn_MostrarTablero.Size = new System.Drawing.Size(95, 32);
             this.Btn_MostrarTablero.TabIndex = 2;
             this.Btn_MostrarTablero.Text = "Mostrar";
             this.Btn_MostrarTablero.UseVisualStyleBackColor = true;
             // 
             // Tableros
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.Btn_MostrarTablero);
             this.Controls.Add(this.Lsv_Tableros);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Tableros";
             this.Text = "Tableros";
             this.ResumeLayout(false);
