@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Interface_Admin
 {
-    public partial class campeonatosadd : Form
+    public partial class agregar_equipo : Form
     {
-        public campeonatosadd()
+        public agregar_equipo()
         {
             InitializeComponent();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Hide();
         }
     }
 }
