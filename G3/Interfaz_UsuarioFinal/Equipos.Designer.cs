@@ -37,39 +37,46 @@ namespace Interfaz_UsuarioFinal
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(65, 81);
+            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(76, 84);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 13);
+            this.label1.Size = new System.Drawing.Size(72, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Equipos";
             // 
             // Lsv_Equipos
             // 
             this.Lsv_Equipos.HideSelection = false;
-            this.Lsv_Equipos.Location = new System.Drawing.Point(68, 97);
+            this.Lsv_Equipos.Location = new System.Drawing.Point(79, 110);
+            this.Lsv_Equipos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Lsv_Equipos.Name = "Lsv_Equipos";
-            this.Lsv_Equipos.Size = new System.Drawing.Size(107, 196);
+            this.Lsv_Equipos.Size = new System.Drawing.Size(147, 250);
             this.Lsv_Equipos.TabIndex = 1;
             this.Lsv_Equipos.UseCompatibleStateImageBehavior = false;
             // 
             // Btn_MostrarEquipo
             // 
-            this.Btn_MostrarEquipo.Location = new System.Drawing.Point(68, 299);
+            this.Btn_MostrarEquipo.Location = new System.Drawing.Point(79, 368);
+            this.Btn_MostrarEquipo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Btn_MostrarEquipo.Name = "Btn_MostrarEquipo";
-            this.Btn_MostrarEquipo.Size = new System.Drawing.Size(83, 28);
+            this.Btn_MostrarEquipo.Size = new System.Drawing.Size(95, 32);
             this.Btn_MostrarEquipo.TabIndex = 2;
             this.Btn_MostrarEquipo.Text = "Mostrar";
             this.Btn_MostrarEquipo.UseVisualStyleBackColor = true;
             // 
             // Equipos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.Btn_MostrarEquipo);
             this.Controls.Add(this.Lsv_Equipos);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Equipos";
             this.Text = "Equipos";
             this.ResumeLayout(false);
