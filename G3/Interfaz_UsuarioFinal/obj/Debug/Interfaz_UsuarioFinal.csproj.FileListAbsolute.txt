@@ -1,0 +1,48 @@
+D:\8VO_SEMESTRE\ANALISIS_II\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.Properties.Resources.resources
+D:\8VO_SEMESTRE\ANALISIS_II\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.csproj.GenerateResource.cache
+D:\8VO_SEMESTRE\ANALISIS_II\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.csproj.CoreCompileInputs.cache
+D:\8VO_SEMESTRE\ANALISIS_II\microcasosasd22023\G3\Interfaz_UsuarioFinal\bin\Debug\Interfaz_UsuarioFinal.exe.config
+D:\8VO_SEMESTRE\ANALISIS_II\microcasosasd22023\G3\Interfaz_UsuarioFinal\bin\Debug\Interfaz_UsuarioFinal.exe
+D:\8VO_SEMESTRE\ANALISIS_II\microcasosasd22023\G3\Interfaz_UsuarioFinal\bin\Debug\Interfaz_UsuarioFinal.pdb
+D:\8VO_SEMESTRE\ANALISIS_II\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.exe
+D:\8VO_SEMESTRE\ANALISIS_II\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.pdb
+D:\8VO_SEMESTRE\ANALISIS_II\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.InicioSesion.resources
+D:\8VO_SEMESTRE\ANALISIS_II\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.Menu_Principal.resources
+D:\8VO_SEMESTRE\ANALISIS_II\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.Registro.resources
+D:\Escritorio\Analsis de Sistemas II\Proyecto Polideportivo\microcasosasd22023\G3\Interfaz_UsuarioFinal\bin\Debug\Interfaz_UsuarioFinal.exe.config
+D:\Escritorio\Analsis de Sistemas II\Proyecto Polideportivo\microcasosasd22023\G3\Interfaz_UsuarioFinal\bin\Debug\Interfaz_UsuarioFinal.exe
+D:\Escritorio\Analsis de Sistemas II\Proyecto Polideportivo\microcasosasd22023\G3\Interfaz_UsuarioFinal\bin\Debug\Interfaz_UsuarioFinal.pdb
+D:\Escritorio\Analsis de Sistemas II\Proyecto Polideportivo\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.csproj.AssemblyReference.cache
+D:\Escritorio\Analsis de Sistemas II\Proyecto Polideportivo\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.InicioSesion.resources
+D:\Escritorio\Analsis de Sistemas II\Proyecto Polideportivo\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.Menu_Principal.resources
+D:\Escritorio\Analsis de Sistemas II\Proyecto Polideportivo\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.Properties.Resources.resources
+D:\Escritorio\Analsis de Sistemas II\Proyecto Polideportivo\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.Registro.resources
+D:\Escritorio\Analsis de Sistemas II\Proyecto Polideportivo\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.csproj.GenerateResource.cache
+D:\Escritorio\Analsis de Sistemas II\Proyecto Polideportivo\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.csproj.CoreCompileInputs.cache
+D:\Escritorio\Analsis de Sistemas II\Proyecto Polideportivo\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.exe
+D:\Escritorio\Analsis de Sistemas II\Proyecto Polideportivo\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.pdb
+D:\Escritorio\Analsis de Sistemas II\Proyecto Polideportivo\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.Equipos.resources
+D:\Escritorio\Analsis de Sistemas II\Proyecto Polideportivo\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.Estadisticas.resources
+D:\Escritorio\Analsis de Sistemas II\Proyecto Polideportivo\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.Tablas.resources
+D:\Escritorio\Analsis de Sistemas II\Proyecto Polideportivo\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.Tableros.resources
+D:\8VO_SEMESTRE\ANALISIS_II\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.csproj.AssemblyReference.cache
+D:\8VO_SEMESTRE\ANALISIS_II\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.Equipos.resources
+D:\8VO_SEMESTRE\ANALISIS_II\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.Estadisticas.resources
+D:\8VO_SEMESTRE\ANALISIS_II\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.Tablas.resources
+D:\8VO_SEMESTRE\ANALISIS_II\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.Tableros.resources
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\SPolideportivo\microcasosasd22023\G3\Interfaz_UsuarioFinal\bin\Debug\Interfaz_UsuarioFinal.exe.config
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\SPolideportivo\microcasosasd22023\G3\Interfaz_UsuarioFinal\bin\Debug\Interfaz_UsuarioFinal.exe
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\SPolideportivo\microcasosasd22023\G3\Interfaz_UsuarioFinal\bin\Debug\Interfaz_UsuarioFinal.pdb
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\SPolideportivo\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\SPolideportivo\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.Equipos.resources
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\SPolideportivo\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.Estadisticas.resources
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\SPolideportivo\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.InicioSesion.resources
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\SPolideportivo\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.Menu_Principal.resources
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\SPolideportivo\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.Properties.Resources.resources
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\SPolideportivo\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.Registro.resources
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\SPolideportivo\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.Tablas.resources
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\SPolideportivo\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.Tableros.resources
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\SPolideportivo\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.csproj.GenerateResource.cache
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\SPolideportivo\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\SPolideportivo\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.exe
+C:\Users\USUARIO\Desktop\VIII Semestre\Análisis II\SPolideportivo\microcasosasd22023\G3\Interfaz_UsuarioFinal\obj\Debug\Interfaz_UsuarioFinal.pdb
